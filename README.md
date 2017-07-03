@@ -18,14 +18,14 @@
 - denosing autoencoder
 
 **Stable reinforcement learning with autoencoders for tactile and visual data.**, van Hoof, Herke, et al, (2016)
-Deep Spatial Autoencoders for Visuomotor Learning., Finn, Chelsea, et al., (2016) <\br>
+Deep Spatial Autoencoders for Visuomotor Learning., Finn, Chelsea, et al., (2016) <br>
 
 
 ## Variational learning
 
 - variational autoencoder
 
-**Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data** , Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt, (2017), pdf <\br>
+**Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data** , Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt, (2017), pdf <br>
 **Deep Kalman Filters**, Rahul G. Krishnan, Uri Shalit, David Sontag, (2015), pdf
 
 ## Multi modale learning
