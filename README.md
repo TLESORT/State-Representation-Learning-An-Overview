@@ -2,7 +2,7 @@
 
 # DEEP LEARNING IN ROBOTICS IS COMMING  !!!!
 
-## prior learning
+## Learning with a priori
 
 - constraint
 - siamese network
@@ -36,6 +36,8 @@ Deep Spatial Autoencoders for Visuomotor Learning., Finn, Chelsea, et al., (2016
 **Deep Kalman Filters**, Rahul G. Krishnan, Uri Shalit, David Sontag, (2015), pdf
 
 ## Reinforcement Learning
+
+## Embeded (metric) Learning
 
 ## Multi modale learning
 
