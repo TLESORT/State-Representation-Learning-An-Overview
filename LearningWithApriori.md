@@ -1,16 +1,23 @@
 
 # Learning with a priori
 
-## Introduction
+****************************************************
 
-~What do I want to say?~
+`What do I want to say?`<br>
 That state represeentation learning can be done with prior
 
-~What does the prior do?~
+`What does the prior do?`<br>
 The prior are a way to share knowledge we have about the wolrd with our deep learning algorithm
 
-~How to do it?~
+`How to do it?`<br>
 By constraining the learning process (by architecture or by optimization)
+
+
+****************************************************
+
+## Introduction
+
+
 
 ## Learned States
 
