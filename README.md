@@ -19,13 +19,13 @@
  
  **Slow Feature Analysis:Unsupervised Learning of Invariance**, *Laurenz Wiskott, Terrence J. Sejnowski*
 
-## Autoencoder
+## Autoencoder [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Autoencoders.md)
 
 - autoencoder
 - denosing autoencoder
 
-**Stable reinforcement learning with autoencoders for tactile and visual data.**, van Hoof, Herke, et al, (2016)
-Deep Spatial Autoencoders for Visuomotor Learning., Finn, Chelsea, et al., (2016) <br>
+**Stable reinforcement learning with autoencoders for tactile and visual data.**, *van Hoof, Herke, et al*, (2016) <br>
+**Deep Spatial Autoencoders for Visuomotor Learning**, *Finn, Chelsea, et al.*, (2016) <br>
 
 
 ## Variational learning
