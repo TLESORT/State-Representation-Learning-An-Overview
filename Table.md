@@ -7,12 +7,3 @@
  DE-IGN        | Kulkarni'15   | Semi         |         | yes |  | no 
  Beta VAE      | Higgins'17    | Semi         | stable  | No |  | no 
  PVE           | Jonschkowsky17| No           |    | yes |  | no 
-
-
-
-
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
