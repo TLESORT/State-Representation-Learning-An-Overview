@@ -1,6 +1,6 @@
 # State-Representation-Learning-An-Overview
 
-# DEEP LEARNING IN ROBOTICS IS COMMING  !!!!
+# DEEP LEARNING IN ROBOTICS IS COMING  !!!!
 
 ## Learning with a priori [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/LearningWithApriori.md)
 
