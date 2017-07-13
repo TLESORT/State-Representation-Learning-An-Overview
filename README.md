@@ -65,10 +65,11 @@ Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville, 20
 Learning Visual Reasoning Without Strong Priors
 Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville, 2017
 
-Relational Networks 
+Relational Networks (Santoro’17) 
 
-Visual Interaction Networks  (both DeepMind)
+Visual Interaction Networks (Watters’17)
 
+Philosophically similar models ((Santoro’17 and (Watters’17) use abstract logic to reason about the worldRelational reasoning is very closely linked to the elusive human "common sense", something that for a long time we thought not even other animals could do (eg "what is the color of the object closest to the red square?" "How many objects have the same shape as the blue one?"). Now this system achieves higher accuracy than humans.  [1706.01427] A simple neural network module for relational reasoning.
 
 ## non classified
 - **Embed to control: A locally linear latent dynamics model for control from raw images** <br> Watter, Manuel, et al, (2015)
