@@ -1,10 +1,10 @@
 
-# Learning with a priori
+# Learning with priors
 
 ****************************************************
 
 `What do I want to say?`<br>
-That state represeentation learning can be done with prior
+That state representation learning can be done with prior
 
 `What does the prior do?`<br>
 The prior are a way to share knowledge we have about the wolrd with our deep learning algorithm
@@ -26,13 +26,14 @@ By constraining the learning process (by architecture or by optimization)
 - Simplicity
 - Time
 - Proportionnality
-- Repetability
+- Repeatability
 - Causality
+- Velocity/Acceleration/Inertia preservation (See PVE paper)
 - [...]
 
 ## Methods
 
-- architecture constrainct
+- architecture constraints
 - siamese network + optimization constrainct
 - metric learning
 
