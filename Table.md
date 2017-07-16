@@ -16,7 +16,7 @@
  Inception scop |  | generatives models (GAN)  | 
  Distortion |  | Unsupervised Representaiton learning  | 
  [Survey] | Allan Ma | GANs  | 
-freeshot inception distance | Heusel 17  | GANs  | Best than inception
+freeshot inception distance | Heusel 17  | GANs  | Better than inception
  
  
  

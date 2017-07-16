@@ -56,12 +56,20 @@ The inconvenient is the need to learn a dense representation before doing matchi
 
 ## Using Priors
 2 papers of Jonchowsky PVE (Jonchosk)
+Conceptual abstraction. 2) Compositional structure. 3) Common sense priors: 
+
+Towards Deep Symbolic Reinforcement Learning, Garnelo et al. NIPS 2016
+
+
+On predictive priors: http://www.jenskober.de/MunkCDC2016.pdf  Ils utilisent simplement le fait que l'état doit permettre de prédire efficacement le prochain état et la récompense. Ca pourrait être assez simple a tester dans notre cas j'imagine.
+
+
 
 ## Against Priors
 Learning Visual Reasoning Without Strong Priors
 Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville, 2017
 
-## Visual Relational Learning:
+## Relational and Symbolic Learning:
 Learning Visual Reasoning Without Strong Priors
 Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville, 2017
 
@@ -69,13 +77,62 @@ Relational Networks (Santoro’17)
 
 Visual Interaction Networks (Watters’17)
 
-Philosophically similar models ((Santoro’17 and (Watters’17) use abstract logic to reason about the worldRelational reasoning is very closely linked to the elusive human "common sense", something that for a long time we thought not even other animals could do (eg "what is the color of the object closest to the red square?" "How many objects have the same shape as the blue one?"). Now this system achieves higher accuracy than humans.  [1706.01427] A simple neural network module for relational reasoning.
+Towards Deep Symbolic Reinforcement Learning, Garnelo et al. NIPS 2016
+
+Reasoning about Time and Knowledge Neural-Symbolic Learning Systems, d’Avila Garcez et al., NIPS 2004.
+
+A simple neural network module for relational reasoning, Santoro et al. 2017.
+
+Graph convolutional Auto-Encoders. Thomas Kipf‏ @thomaskipf Graph auto-encoders (in TensorFlow) is now available on GitHub: https://github.com/tkipf/gae 
+
+
+## Task-oriented state representation learning
+
+Gated-attention architectures for Task-Oriented Language Grounding, Chaplot, 2017
+
 
 ## non classified
 - **Embed to control: A locally linear latent dynamics model for control from raw images** <br> Watter, Manuel, et al, (2015)
  
  - **Representation Learning: A Review and New Perspectives** <br> Yoshua Bengio, Aaron Courville, and Pascal Vincent, (2012), pdf
  
+
+## Policy learning- based approaches
+
+ Black-Box Data-efficient Policy Search for Robotics. 2017. Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret. Gaussian process regression for policy optimisation using model based policy search. The Black-DROPS algorithm learns a high-dimensional policy from scratch in 5 trials, which are enough to learn the whole dynamics of the arm from scratch. https://arxiv.org/abs/1703.07261  @IROS2017 #resibots
+
+
+REINFORCEMENT LEARNING WITH UNSUPERVISED AUXILIARY TASKS (UNREAL). Max Jaderberg et al. 2016. UNREAL algorithm shows that augmenting a deep reinforcement learning agent with auxiliary control and reward prediction tasks can double improvement both in data efficiency and robustness to hyperparameter settings.  A successor in learning speed and the robustness to A3C (Over 87% of human scores). 
+
+
+## One/Few-shot approaches
+
+Siamese Neural Networks for One-shot Image Recognition, Gregory Koch Richard Zemel Ruslan Salakhutdinov
+
+(REPEATED, USE TAGS?): Black-Box Data-efficient Policy Search for Robotics
+Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp,
+Vassilis Vassiliades and Jean-Baptiste Mouret*
+
+## GANS
+
+Unsupervised Pixel–Level Domain Adaptation with Generative Adversarial Networks, Bousmalis 16
+Unsupervised approach using a (GAN)–based architecture that is able to learn such a transformation
+in an unsupervised manner, i.e. without using corresponding pairs from the two domains. 
+It is the best state of the art approach on unsupervised learning for domain adaptation, improving over:
+Decoupling from the Task-Specific Architecture, Generalization Across Label Spaces, achieve Training Stability and Data Augmentation.
+
+
+
+## Off topic: other interesting papers
+
+Survey paper on Geometry of Optimization & Implicit Regularization in Deep Learning with Neyshabur, Tomioka, Srebro 
+https://arxiv.org/abs/1705.03071 
+
+
 ## Validation Methods
+
+On the Quantitative Evaluation of Deep Generative Models Russ Salakhutdinov  www.cs.cmu.edu/~rsalakhu/talk_Eval.pdf
+
+
 
 
