@@ -45,7 +45,13 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 
 ## Reinforcement Learning
 
+- **Loss is its own Reward: Self-Supervision for Reinforcement Learning** (2016) <br>
+ *Evan Shelhamer, Parsa Mahmoudieh, Max Argus, Trevor Darrell* [pdf](https://arxiv.org/pdf/1612.07307.pdf)
+
 ## Embedded (metric) Learning
+
+- **A new embedding quality assessment method for manifold learning** (2016) <br>
+*Yuanyuan Ren, and Bo Zhang*, [pdf](https://arxiv.org/pdf/1108.1636v1.pdf)
 
 ## Multi modal learning
 
