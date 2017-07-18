@@ -12,7 +12,7 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 - constraint
 - siamese network
 
-- **PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations** <br> Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller, (2017), pdf, arXiv
+- **PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations** <br> Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller, (2017), [pdf](https://arxiv.org/pdf/1705.09805.pdf)
 
  - **Learning State Representations with Robotic Priors**<br> Rico Jonschkowski, Oliver Brock, (2015) , pdf <br>
  
