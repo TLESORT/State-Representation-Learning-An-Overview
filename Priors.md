@@ -23,8 +23,9 @@ Contrarely to bayesian probability in the contexte of state representation learn
 
 ## A priori
 
+Different priors have been proposed to adress the problem of sharing our knowledgte with neural network. There are almost always related to the time. For instance one of our best advantage against neural neural is our comprehension of the interaction between entities through time. The neural network have a lot of difficulties to make link between events if there are not neigboor. Explaining that information can easely be extract from time by looking at it the right way would help significantly a neural network to make decision. It could also reduce the complexity of the inference because there is a lot of coherence through time. Here is a list of the priors and the paper which formulate it or use it.
 - Simplicity
-- Time
+- Time conherence/ continous
 - Proportionnality
 - Repeatability
 - Causality
