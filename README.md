@@ -1,4 +1,4 @@
-# State-Representation-Learning-An-Overview
+# State-Representation-Learning-In-Robotics: An-Overview
 
 # DEEP LEARNING IN ROBOTICS IS COMING  !!!!
 
@@ -58,9 +58,6 @@ The inconvenient is the need to learn a dense representation before doing matchi
 2 papers of Jonchowsky PVE (Jonchosk)
 Conceptual abstraction. 2) Compositional structure. 3) Common sense priors: 
 
-Towards Deep Symbolic Reinforcement Learning, Garnelo et al. NIPS 2016
-
-
 On predictive priors: http://www.jenskober.de/MunkCDC2016.pdf  Ils utilisent simplement le fait que l'état doit permettre de prédire efficacement le prochain état et la récompense. Ca pourrait être assez simple a tester dans notre cas j'imagine.
 
 
@@ -74,6 +71,8 @@ Learning Visual Reasoning Without Strong Priors
 Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville, 2017
 
 Relational Networks (Santoro’17) 
+
+Towards Deep Symbolic Reinforcement Learning, Garnelo et al. NIPS 2016. Check if it uses priors? and tag it
 
 Visual Interaction Networks (Watters’17)
 
@@ -90,12 +89,6 @@ Graph convolutional Auto-Encoders. Thomas Kipf‏ @thomaskipf Graph auto-encoder
 
 Gated-attention architectures for Task-Oriented Language Grounding, Chaplot, 2017
 
-
-## non classified
-- **Embed to control: A locally linear latent dynamics model for control from raw images** <br> Watter, Manuel, et al, (2015)
- 
- - **Representation Learning: A Review and New Perspectives** <br> Yoshua Bengio, Aaron Courville, and Pascal Vincent, (2012), pdf
- 
 
 ## Policy learning- based approaches
 
@@ -115,18 +108,14 @@ Vassilis Vassiliades and Jean-Baptiste Mouret*
 
 ## GANS
 
-Unsupervised Pixel–Level Domain Adaptation with Generative Adversarial Networks, Bousmalis 16
-Unsupervised approach using a (GAN)–based architecture that is able to learn such a transformation
+Unsupervised Pixel–Level Domain Adaptation with Generative Adversarial Networks, Bousmalis 16  presents an unsupervised approach using a (GAN)–based architecture that is able to learn such a transformation
 in an unsupervised manner, i.e. without using corresponding pairs from the two domains. 
 It is the best state of the art approach on unsupervised learning for domain adaptation, improving over:
 Decoupling from the Task-Specific Architecture, Generalization Across Label Spaces, achieve Training Stability and Data Augmentation.
 
-
-
-## Off topic: other interesting papers
-
-Survey paper on Geometry of Optimization & Implicit Regularization in Deep Learning with Neyshabur, Tomioka, Srebro 
-https://arxiv.org/abs/1705.03071 
+BEGAN: Boundary Equilibrium Generative Adversarial Networks, David Berthelot et al. 17
+In contrast to traditional GANS that require alternating training D and G, or pretraining D, \textit{BEGAN requires neither to train stably}. The discriminator has two competing goals: auto-encode real images and discriminate
+real from generated images (balanced by gamma). They propose a new equilibrium enforcing method paired with a loss derived from the Wasserstein distance for training auto-encoder based GAN that balances the generator and discriminator during training. It provides a new approximate convergence measure, fast and stable training which controls the trade-off between image diversity and visual quality. 
 
 
 ## Validation Methods
@@ -134,5 +123,40 @@ https://arxiv.org/abs/1705.03071
 On the Quantitative Evaluation of Deep Generative Models Russ Salakhutdinov  www.cs.cmu.edu/~rsalakhu/talk_Eval.pdf
 
 
+## SURVEYS
+- **Not peer reviewed? https://arxiv.org/pdf/1701.07274.pdf
 
 
+- **Representation Learning: A Review and New Perspectives** <br> Yoshua Bengio, Aaron Courville, and Pascal Vincent, (2012), pdf
+
+- **Survey paper on Geometry of Optimization & Implicit Regularization in Deep Learning with Neyshabur, Tomioka, Srebro 
+https://arxiv.org/abs/1705.03071 
+
+
+## non classified / Off topic: other interesting papers
+
+- **Embed to control: A locally linear latent dynamics model for control from raw images** <br> Watter, Manuel, et al, (2015)
+
+
+## Prediction-based learning/ forward models
+Basic idea: The loss is based on prediction errors of next states.
+
+Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large-Scale Data Collection. The Google dataset release paper proposes a continuous servoing mechanism that uses \textit{the grasp prediction network to choose the motor commands for the robot that will maximize the probability of a success grasp}.  https://arxiv.org/pdf/1603.02199.pdf
+
+
+On predictive priors: http://www.jenskober.de/MunkCDC2016.pdf  Ils utilisent simplement le fait que l'état doit permettre de prédire efficacement le prochain état et la récompense. Ca pourrait être assez simple a tester dans notre cas j'imagine.
+
+TODO Add Pieter abbel 17 June17. Check if evolution of UNREAL (Mnih17 fits here too, I think so)
+
+
+## Interpretability  methods for evaluating learned representations
+Understanding intermediate layers using linear classifier probes. Alain and Bengio 16  https://arxiv.org/pdf/1610.01644.pdf
+
+Explaining the Unexplained: A CLass-Enhanced Attentive Response (CLEAR)
+Approach to Understanding Deep Neural Networks, Kumar et al 17  https://arxiv.org/pdf/1704.04133.pdf
+
+
+# Category labels found that expand accross papers (to decide if they are columns to add to our paper table?)
+Prediction-based
+reward-less
+Using priors
