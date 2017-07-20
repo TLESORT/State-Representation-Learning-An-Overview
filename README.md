@@ -36,7 +36,7 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 - **Deep Spatial Autoencoders for Visuomotor Learning**<br> *Finn, Chelsea, et al.*, (2016)
 
 
-## Variational learning
+## Variational learning [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Variational.md)
 
 - variational autoencoder
 
