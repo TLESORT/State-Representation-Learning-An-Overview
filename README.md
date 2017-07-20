@@ -184,8 +184,9 @@ http://realai.org/predictive-learning/
 
 
 
-###  On auxiliary tasks to improve learning:
-Reinforcement Learning with Unsupervised Auxiliary Tasks, https://arxiv.org/pdf/1611.05397
+### Auxiliary tasks for improving learning: http://realai.org/auxiliary-tasks/
+
+Reinforcement Learning with Unsupervised Auxiliary Tasks 2016  https://arxiv.org/abs/1611.05397
 Continuous control with deep reinforcement learning, 2015   https://arxiv.org/abs/1509.02971
 The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously, 2017  https://arxiv.org/pdf/1707.03300.pdf
 
@@ -198,7 +199,9 @@ State-of-the-art GANs for unsupervised representation learning:
 BEGAN (or BiGAN?), CycleGAN and pixel based GAN
 
 
+### Few-shot learning 
 
+Few-Shot Learning Through an Information Retrieval Lens. Triantafillou, 2017
 
 
 

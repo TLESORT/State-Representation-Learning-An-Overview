@@ -1,0 +1,9 @@
+## Extending priors and loss functions
+
+
+## Few-Shot Learning Through an Information Retrieval Lens. Triantafillou, 2017
+
+
+## Deepmind Imagination-augmented agents
+
+The agents we introduce benefit from an ‘imagination encoder’- a neural network which learns to extract any information useful for the agent’s future decisions, but ignore that which is not relevant.
