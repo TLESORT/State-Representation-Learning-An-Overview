@@ -2,7 +2,7 @@
 
 (everything here is bad written, you don't have to read it :) )
 
-The hidden parameters of a environenement can be interpreted as parameters of the distribution which generate our input data. If we can fit this distribution we can find the hidden parameteers which explains the best the distribution of the data. The variational approach aims to find this distributuion to exctract a representation. the problem is that we can only sample a low part of the distribution which produce the data. It means that we can not a probability for each data because the normalisation varaible is intractable and it make the minimization between a learn distribution and the true one difficult to realize. All the varaitional paper which learn state representaiton utilize a reparametrization trick to make the problem tractable.
+The hidden parameters of a environenement can be interpreted as parameters of the distribution which generate our input data. If we can fit this distribution we can find the latent varaible of the data's distribution. The variational approach aims to find this distributuion to exctract a representation. the problem is that we can only sample a low part of the distribution which produce the data. It means that we can not a probability for each data because the normalisation varaible is intractable and it make the minimization between a learn distribution and the true one difficult to realize. All the varaitional paper which learn state representaiton utilize a reparametrization trick to make the problem tractable.
 
 # Variational autoencoders
 
