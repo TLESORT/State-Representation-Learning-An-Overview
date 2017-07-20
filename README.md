@@ -130,6 +130,9 @@ real from generated images (balanced by gamma). They propose a new equilibrium e
 On the Quantitative Evaluation of Deep Generative Models Russ Salakhutdinov  www.cs.cmu.edu/~rsalakhu/talk_Eval.pdf
 
 
+Interesting paper about evaluating embeddings : https://arxiv.org/pdf/1108.1636v1.pdf we have their matlab code
+
+
 ## SURVEYS
 - **Not peer reviewed? https://arxiv.org/pdf/1701.07274.pdf
 
@@ -153,7 +156,10 @@ Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large
 
 On predictive priors: http://www.jenskober.de/MunkCDC2016.pdf  Ils utilisent simplement le fait que l'état doit permettre de prédire efficacement le prochain état et la récompense. Ca pourrait être assez simple a tester dans notre cas j'imagine.
 
-TODO Add Pieter abbel 17 June17. Check if evolution of UNREAL (Mnih17 fits here too, I think so)
+
+Learning a forward/inverse model to learn good representations : https://arxiv.org/pdf/1612.07307.pdf
+
+
 
 
 ## Interpretability  methods for evaluating learned representations
@@ -163,7 +169,39 @@ Explaining the Unexplained: A CLass-Enhanced Attentive Response (CLEAR)
 Approach to Understanding Deep Neural Networks, Kumar et al 17  https://arxiv.org/pdf/1704.04133.pdf
 
 
-# Category labels found that expand accross papers (to decide if they are columns to add to our paper table?)
+## Category labels found that expand accross papers (to decide if they are columns to add to our paper table?)
 Prediction-based
 reward-less
 Using priors
+
+
+
+
+### Predictive learning
+http://realai.org/predictive-learning/
+
+
+
+###  On auxiliary tasks to improve learning:
+Reinforcement Learning with Unsupervised Auxiliary Tasks, https://arxiv.org/pdf/1611.05397
+Continuous control with deep reinforcement learning, 2015   https://arxiv.org/abs/1509.02971
+The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously, 2017  https://arxiv.org/pdf/1707.03300.pdf
+
+
+
+
+## GANS
+
+State-of-the-art GANs for unsupervised representation learning:
+BEGAN (or BiGAN?), CycleGAN and pixel based GAN
+
+
+
+
+
+
+## TO CLASSIFY:
+ Add Pieter abbel 17 June17.
+
+Wang, X., Gupta, A.: Unsupervised learning of visual representations using videos.
+ICCV (2015)
