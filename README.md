@@ -1,4 +1,4 @@
-# State-Representation-Learning-In-Robotics: An-Overview
+# State-Representation-Learning(-In-Robotics): An-Overview
 
 # DEEP LEARNING IN ROBOTICS IS COMING  !!!!
 
@@ -41,12 +41,15 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 - variational autoencoder
 
 - **Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data**  <br> Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt, (2017), pdf
-- **Deep Kalman Filters** <br> Rahul G. Krishnan, Uri Shalit, David Sontag, (2015), pdf
+- **Deep Kalman Filters** <br> Rahul G. Krishnan, Uri Shalit, David Sontag, (2015), [pdf](https://arxiv.org/pdf/1511.05121.pdf)
+
+- **Embed to control: A locally linear latent dynamics model for control from raw images** <br> Watter, Manuel, et al, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf)
 
 ## Reinforcement Learning
 
 - **Loss is its own Reward: Self-Supervision for Reinforcement Learning** (2016) <br>
  *Evan Shelhamer, Parsa Mahmoudieh, Max Argus, Trevor Darrell* [pdf](https://arxiv.org/pdf/1612.07307.pdf)
+ 
 
 ## Embedded (metric) Learning
 
@@ -145,7 +148,6 @@ https://arxiv.org/abs/1705.03071
 
 ## non classified / Off topic: other interesting papers
 
-- **Embed to control: A locally linear latent dynamics model for control from raw images** <br> Watter, Manuel, et al, (2015)
 
 
 ## Prediction-based learning/ forward models
