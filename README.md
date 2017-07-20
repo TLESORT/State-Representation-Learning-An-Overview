@@ -1,4 +1,4 @@
-# State-Representation-Learning-In-Robotics: An-Overview
+# State-Representation-Learning(-In-Robotics): An-Overview
 
 # DEEP LEARNING IN ROBOTICS IS COMING  !!!!
 
