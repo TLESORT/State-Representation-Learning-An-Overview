@@ -47,6 +47,9 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 
 - **Loss is its own Reward: Self-Supervision for Reinforcement Learning** (2016) <br>
  *Evan Shelhamer, Parsa Mahmoudieh, Max Argus, Trevor Darrell* [pdf](https://arxiv.org/pdf/1612.07307.pdf)
+ 
+ 
+- **Embed to control: A locally linear latent dynamics model for control from raw images** <br> Watter, Manuel, et al, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf)
 
 ## Embedded (metric) Learning
 
@@ -142,7 +145,6 @@ https://arxiv.org/abs/1705.03071
 
 ## non classified / Off topic: other interesting papers
 
-- **Embed to control: A locally linear latent dynamics model for control from raw images** <br> Watter, Manuel, et al, (2015)
 
 
 ## Prediction-based learning/ forward models
