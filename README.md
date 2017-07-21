@@ -161,6 +161,8 @@ On predictive priors: http://www.jenskober.de/MunkCDC2016.pdf  Ils utilisent sim
 
 Learning a forward/inverse model to learn good representations : https://arxiv.org/pdf/1612.07307.pdf
 
+MatchNet and TempoNet: CortexNet: a robust predictive deep neural network trained on videos https://engineering.purdue.edu/elab/CortexNet/
+
 
 
 
@@ -181,6 +183,7 @@ Using priors
 
 ### Predictive learning
 http://realai.org/predictive-learning/
+
 
 
 
