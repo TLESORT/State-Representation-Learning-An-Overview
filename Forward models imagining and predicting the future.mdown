@@ -3,6 +3,24 @@
 
 ## Few-Shot Learning Through an Information Retrieval Lens. Triantafillou, 2017
 
+harness the power of neural networks for metric
+learning. These methods vary in terms of loss functions but have in common a mechanism for the
+parallel and identically-parameterized embedding of the points that will inform the loss function.
+Siamese and triplet networks are commonly-used variants of this family that operate on pairs and
+triplets, respectively. Example applications include signature verification [8] and face verification
+[9, 10]. NCA and LMNN have also been extended to their deep variants [11] and [12], respectively.
+These methods often employ hard-negative mining strategies for selecting informative constraints
+for training [10, 13]. A drawback of siamese and triplet networks is that they are local, in the sense
+that their loss function concerns pairs or triplets of training examples, guiding the learning process
+to optimize the desired relative positions of only two or three examples at a time. The myopia of
+these local methods introduces drawbacks that are reflected in their embedding spaces. [14] propose
+a method to address this by using higher-order information.
+
+Relationship between DLM and SSVM: both yield a loss-informed weight update rule. The gradient computation differs from that of the direct loss minimization approach only in that, while SSVM considers the score of the ground-truth F(X; yGT;w), direct loss minimization considers the score of the current prediction F(X; yw;w).
+
+Let f(x;w) be the embedding function, parameterized by a neural network and phi(x1; x2;w) the
+cosine similarity of points x1 and x2 in the embedding space given by w. phi(x1; x2;w) is typically referred in the literature as the score of a siamese network.
+
 
 ## Deepmind Imagination-augmented agents
 

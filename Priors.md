@@ -7,7 +7,7 @@
 That state representation learning can be done with prior
 
 `What does the prior do?`<br>
-The prior are a way to share knowledge we have about the wolrd with our deep learning algorithm to make it get the physics of the world 
+The prior are a way to share knowledge we have about the wolrd with our deep learning algorithm to make it get the physics of the world
 
 `How to do it?`<br>
 By constraining the learning process (by architecture or by optimization)
@@ -32,10 +32,10 @@ The simplicity prior is implemented in most of state reprezsentation learning pa
 The time coherence or the prior of continuity assume that the state are fluctuating continuously throug time and that a radical change inside the environment have a low probability. Therefor it assume that the representation learned is continuous. It means that the manifold of the representation is continuous.
 
 - **Proportionnality** <br>
-The proportionnality prior assume that for a same action the reactions of this actions will have proportionnal amplitude. The representation will then vary by the same ammount for two same actions in different situation. 
+The proportionnality prior assume that for a same action the reactions of this actions will have proportionnal amplitude. The representation will then vary by the same ammount for two same actions in different situation.
 
 - **Repeatability** <br>
-The repeatability prior asssume that for two same actions the reaction will have proportionnal amplitude and have the same direction. 
+The repeatability prior asssume that for two same actions the reaction will have proportionnal amplitude and have the same direction.
 
 
 - **Causality** <br>
@@ -61,9 +61,12 @@ A markov can make it possible to implement some of the priors. If each nodee of 
 
 
 - **Siamese network + optimization constrainct** <br>
-Siamese network are a generalization of the markov chain which make it possible to have more than two node connected to annother. It is particulary useful when more than two states are necessary toimpose a constraints. For example the implementation of the proportionnality prior need two states variation then four states. The siamese network can compute the for styate at the same time and compute a gradient which make the variation of states proportinnal. 
+Siamese networks are a generalization of the markov chain which make it possible to have more than two node connected to another. It is particulary useful when more than two states are necessary to impose constraints. For example the implementation of the proportionnality prior need two states variation then four states. The siamese network can compute the for state at the same time and compute a gradient which makes the variation of states proportinnal.
 
 - **Metric learning** <br>
+
+Aurélien Bellet, Amaury Habrard, and Marc Sebban. A survey on metric learning for feature
+vectors and structured data. 2013.
 [???]
 
 ## Papers

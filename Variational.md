@@ -11,6 +11,8 @@ The hidden parameters of a environenement can be interpreted as parameters of th
 # Papers
 
 - **Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data**  <br> Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt, (2017), pdf
+Nat will do summary
+
 
 - **Deep Kalman Filters** <br> Rahul G. Krishnan, Uri Shalit, David Sontag, (2015), [pdf](https://arxiv.org/pdf/1511.05121.pdf)
 
