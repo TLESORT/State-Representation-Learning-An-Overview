@@ -60,6 +60,8 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 - **A new embedding quality assessment method for manifold learning** (2016) <br>
 *Yuanyuan Ren, and Bo Zhang*, [pdf](https://arxiv.org/pdf/1108.1636v1.pdf)
 
+- **A Survey on Metric Learning for Feature Vectors and Structured Data** (2013) <br> *Aurélien Bellet, Amaury Habrard, Marc Sebban* [pdf](https://arxiv.org/pdf/1306.6709) [arXiv](https://arxiv.org/abs/1306.6709) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/BelletHS13)
+
 ## Multi modal learning
 
 The inconvenient is the need to learn a dense representation before doing matching because it suffers from the curse of dimensionality 
