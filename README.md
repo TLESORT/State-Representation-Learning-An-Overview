@@ -1,5 +1,7 @@
 # State-Representation-Learning(-In-Robotics): An-Overview
 
+# [Overleaf](https://www.overleaf.com/10392879srrcsmhcgrkz)
+
 # DEEP LEARNING IN ROBOTICS IS COMING  !!!!
 
 ## Abstract
@@ -12,19 +14,19 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 - constraint
 - siamese network
 
-- **PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations** <br> Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller, (2017), [pdf](https://arxiv.org/pdf/1705.09805.pdf)
+- **PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations**, *Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller*, (2017), [pdf](https://arxiv.org/pdf/1705.09805), [arXiv](https://arxiv.org/abs/1705.09805), [Arxiv](https://arxiv.org/abs/1705.09805) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/JonschkowskiHSR17)
 
- - **Learning State Representations with Robotic Priors**<br> Rico Jonschkowski, Oliver Brock, (2015) , pdf <br>
+ - **Learning State Representations with Robotic Priors**, *Rico Jonschkowski, Oliver Brock*, (2015) , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) [bib](http://dl.acm.org/citation.cfm?id=2825776)
  
- - **A Physics-Based Model Prior for Object-Oriented MDPs** <br> *Jonathan Scholz, Martin Levihn, Charles L. Isbell, David Wingate*, (2014) [pdf](http://proceedings.mlr.press/v32/scholz14.pdf)  
+ - **A Physics-Based Model Prior for Object-Oriented MDPs** (2014) <br>
+*Jonathan Scholz, Martin Levihn, Charles L. Isbell, David Wingate*, [pdf](http://proceedings.mlr.press/v32/scholz14.pdf) [bib](http://dl.acm.org/citation.cfm?id=3045014) 
 
-- **The Curious Robot: Learning Visual Representations via Physical Interactions** <br> Lerrel Pinto, Dhiraj Gandhi, Yuanfeng Han, Yong-Lae Park, Abhinav Gupta,(2016) (hidden state representation) <br>
+- **The Curious Robot: Learning Visual Representations via Physical Interactions** <br> *Lerrel Pinto, Dhiraj Gandhi, Yuanfeng Han, Yong-Lae Park, Abhinav Gupta*,(2016), [pdf](https://arxiv.org/pdf/1604.01360.pdf) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/PintoGHPG16) [slides](https://pdfs.semanticscholar.org/a6ee/1a3d623daa2714f70232d4fa61cbd1b3cff3.pdf)
 
 - **Label-Free Supervision of Neural Networks with Physics and Domain Knowledge**<br> *Russell Stewart , Stefano Ermon*, (2016) 
  
-- **Slow Feature Analysis:Unsupervised Learning of Invariance**<br> *Laurenz Wiskott, Terrence J. Sejnowski* [pdf](https://papers.cnl.salk.edu/PDFs/Slow%20Feature%20Analysis_%20Unsupervised%20Learning%20of%20Invariances%202002-3430.pdf)
-
- - **Incremental Slow Feature Analysis** <br> *Varun Raj Kompella, Matthew Luciw, and Jurgen Schmidhuber* (2011) [pdf](https://www.ijcai.org/Proceedings/11/Papers/229.pdf)
+- **Slow Feature Analysis:Unsupervised Learning of Invariance**<br> *Laurenz Wiskott, Terrence J. Sejnowski* [pdf](https://papers.cnl.salk.edu/PDFs/Slow%20Feature%20Analysis_%20Unsupervised%20Learning%20of%20Invariances%202002-3430.pdf) [bib](http://dl.acm.org/citation.cfm?id=638941)
+ - **Incremental Slow Feature Analysis** <br> *Varun Raj Kompella, Matthew Luciw, and Jurgen Schmidhuber* (2011) [pdf](https://www.ijcai.org/Proceedings/11/Papers/229.pdf) [ArXiv](https://arxiv.org/abs/1112.2113) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1112-2113)
 
 ## Autoencoder [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Autoencoders.md)
 
@@ -33,10 +35,12 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 
 
 - **Stable reinforcement learning with autoencoders for tactile and visual data.**<br> *van Hoof, Herke, et al*, (2016)
-- **Deep Spatial Autoencoders for Visuomotor Learning**<br> *Finn, Chelsea, et al.*, (2016)
+- **Deep Spatial Autoencoders for Visuomotor Learning**<br> *Finn, Chelsea, et al.*, (2015)
 
 
-## Variational learning
+## Variational learning [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Variational.md)
+
+[NEED TO CONTINUE BIBB SEARCH FROM HERE]
 
 - variational autoencoder
 
@@ -55,6 +59,8 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 
 - **A new embedding quality assessment method for manifold learning** (2016) <br>
 *Yuanyuan Ren, and Bo Zhang*, [pdf](https://arxiv.org/pdf/1108.1636v1.pdf)
+
+- **A Survey on Metric Learning for Feature Vectors and Structured Data** (2013) <br> *Aurélien Bellet, Amaury Habrard, Marc Sebban* [pdf](https://arxiv.org/pdf/1306.6709) [arXiv](https://arxiv.org/abs/1306.6709) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/BelletHS13)
 
 ## Multi modal learning
 
