@@ -73,7 +73,6 @@ PVE considers 1) Conceptual abstraction. 2) Compositional structure. 3) Common s
 Their inconvenient is the need to learn a dense representation before doing matching because they suffers from the curse of dimensionality
 
 ## Against State Representation Learning
-
 - **Learning to Filter with Predictive State Inference Machines** , *Wen Sun, Arun Venkatraman, Byron Boots, J. Andrew Bagnell*, (2016) [pdf](https://arxiv.org/pdf/1512.08836)
 
 
@@ -145,7 +144,6 @@ real from generated images (balanced by gamma). They propose a new equilibrium e
 
 * On the Quantitative Evaluation of Deep Generative Models Russ Salakhutdinov  www.cs.cmu.edu/~rsalakhu/talk_Eval.pdf
 
-
 * A new embedding quality assessment method for manifold learning, Zhang11. https://arxiv.org/pdf/1108.1636v1.pdf we have their matlab code
 Interesting paper about evaluating embeddings through Normalization independent embedding quality (NIEAQA) ssessment, a normalization independent embedding quality criterion, for manifold learning purposes, based on the anisotropic scaling independent measure (ASIM), which compares the similarity between two configurations under motion and anisotropic coordinate scaling. NIEQA is based on ASIM, and consists of three assessments, a local one, a global one and a linear combination of the two. The local measure evaluates how well local neighborhood information is preserved under anisotropic coordinate scaling and rigid motion. NIEQA is valued between 0 and 1, where 0 represents a perfect preservation and its highlights is is the ability of being applicable to both normalized and isometric embeddings, it can provide both local and global assessments, and it can serve as a natural evaluation tool of learned embeddings \cite{Gracia14}.
 
@@ -155,16 +153,16 @@ Interesting paper about evaluating embeddings through Normalization independent 
 
 ## SURVEYS
 
-- **Representation Learning: A Review and New Perspectives** <br> Yoshua Bengio, Aaron Courville, and Pascal Vincent, (2012), pdf
+* Representation Learning: A Review and New Perspectives** <br> Yoshua Bengio, Aaron Courville, and Pascal Vincent, (2012), pdf
 
-- **Survey paper on Geometry of Optimization & Implicit Regularization in Deep Learning with Neyshabur, Tomioka, Srebro
+* Survey paper on Geometry of Optimization & Implicit Regularization in Deep Learning with Neyshabur, Tomioka, Srebro
 https://arxiv.org/abs/1705.03071
 
-- ** A survey on metric learning for feature vectors and structured data. Aurélien Bellet, Amaury Habrard, and Marc Sebban.  2013
+* A survey on metric learning for feature vectors and structured data. Aurélien Bellet, Amaury Habrard, and Marc Sebban.  2013
 
-- ** Deep learning in neural networks: An overview. Schmidhuber, Jürgen Neural Networks - 2015 
+* Deep learning in neural networks: An overview. Schmidhuber, Jürgen Neural Networks - 2015 
 
-- **Not peer reviewed? https://arxiv.org/pdf/1701.07274.pdf
+* Not peer reviewed? https://arxiv.org/pdf/1701.07274.pdf
 
 
 
@@ -179,7 +177,6 @@ Basic idea: The loss is based on prediction errors of next states.
 * Learning a forward/inverse model to learn good representations : https://arxiv.org/pdf/1612.07307.pdf
 
 * MatchNet and TempoNet: CortexNet: a robust predictive deep neural network trained on videos https://engineering.purdue.edu/elab/CortexNet/
-
 
 
 ## Interpretability  methods for evaluating learned representations
@@ -220,7 +217,7 @@ target g(x; ^y) is smaller than  N(0; 1). It reflects the confidence of the mod
 
 * Few-Shot Learning Through an Information Retrieval Lens. Triantafillou, 2017
 * Optimization as a model for few-shot learning. Ravi and Larochelle, 17
-
+* One-shot imitation learning, Duan17.
 
 
 
@@ -235,9 +232,6 @@ By demonstration, cloning, example
 
 
 ## non classified / Off topic: other interesting papers   ## TO CLASSIFY:
-
-
-* Add Pieter abbel 17 June17. 
 
 * Wang, X., Gupta, A.: Unsupervised learning of visual representations using videos.
 ICCV (2015)
