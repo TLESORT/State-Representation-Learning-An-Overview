@@ -228,11 +228,34 @@ reward-less
 Using priors
 0ne/few-shot
 By demonstration, cloning, example
+self-supervision
 
+## Object disentanglement
 
+* Understanding Visual Concepts with Continuation Learning https://arxiv.org/abs/1602.06822
+* Early Visual Concept Learning with Unsupervised Deep Learning https://arxiv.org/abs/1606.05579
+* Discovering objects and their relations from entangled scene representations https://arxiv.org/abs/1702.05068
+* BetaVAE-Learning basic visual Concepts with a constrained variational framework https://openreview.net/pdf?id=Sy2fzU9gl
+* Pixel Objectness, Jain17. https://arxiv.org/abs/1701.05349
 
-## non classified / Off topic: other interesting papers   ## TO CLASSIFY:
+## non classified/other interesting papers / visual representation learning:
+
+### Unsupervised Imitation learning: https://sermanet.github.io/imitation/
+
+*Unsupervised Perceptual Rewards for Imitation Learning was presented at RSS 2017 by Kelvin Xu
+
+*Time-Contrastive Networks: Self-Supervised Learning from Multi-View Observation \cite{Sermanet17Time}
 
 * Wang, X., Gupta, A.: Unsupervised learning of visual representations using videos.
 ICCV (2015)
 
+* CVPR17 http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/%20%20
+
+## No reward learning
+
+* Curiosity-driven Exploration by Self-supervised Prediction. Deepak Pathak et al. \cite{Pathak17} http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf
+Self-supervised approach. 
+
+
+### CVPR17 Best papers
+Learning from Simulated and Unsupervised Images through Adversarial Training, Ashish Shrivastava
