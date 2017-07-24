@@ -20,6 +20,12 @@ Domain of aplication :<br>
 - [...]<br>
 
 
+## Assessment problematique
+
+The assessment objectif is to give a quantitative value which estimate the quality of a representation. In the context of representation learning this can be harder than expected. The assessment should show if the representaiotn we learned is conform to what we expect. Do we expect something in particular? What can we assume other that the information hold by the representation? and then what tool can we use?<br>
+What learning method make us able to make stronger result assumption?<br>
+Still thinking about it.....
+
 ## Learning with priors [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/LearningWithApriori.md)
 
 - constraint
