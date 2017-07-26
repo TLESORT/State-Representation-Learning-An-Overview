@@ -164,6 +164,7 @@ https://arxiv.org/abs/1705.03071
 
 * Not peer reviewed? https://arxiv.org/pdf/1701.07274.pdf
 
+* Neuroscience-inspired AI: http://www.cell.com/neuron/pdf/S0896-6273(17)30509-3.pdf
 
 
 ## Prediction-based learning/ forward models:  http://realai.org/predictive-learning/
@@ -185,7 +186,7 @@ Basic idea: The loss is based on prediction errors of next states.
 * Explaining the Unexplained: A CLass-Enhanced Attentive Response (CLEAR)
 Approach to Understanding Deep Neural Networks, Kumar et al 17  https://arxiv.org/pdf/1704.04133.pdf
 
-
+* Foolbox v0.8.0: A Python toolbox to benchmark the robustness of machine learning models. Rauber17 is a library that tests for adversarial attackes, different evaluation metrics and machine learning models.
 
 
 
@@ -251,11 +252,14 @@ ICCV (2015)
 
 * CVPR17 http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/%20%20
 
+* Unsupervised learning.: DEEP UNSUPERVISED LEARNING THROUGH SPATIAL
+CONTRASTING Hoffer16 https://arxiv.org/pdf/1610.00243.pdf  Equivalent to DistanceRatioCriterion implemented in Torch for triple based comparison loss function. 
+
 ## No reward learning
 
 * Curiosity-driven Exploration by Self-supervised Prediction. Deepak Pathak et al. \cite{Pathak17} http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf
 Self-supervised approach. 
 
 
-### CVPR17 Best papers
+### CVPR 17 Best papers
 Learning from Simulated and Unsupervised Images through Adversarial Training, Ashish Shrivastava
