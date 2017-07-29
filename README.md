@@ -128,6 +128,11 @@ Proposes a reusable neural network module to reason about the relations between 
 
 * Gated-attention architectures for Task-Oriented Language Grounding, Chaplot, 2017
 
+######
+## Physics states and property learning:
+* Schema Networks: Zero-shot Transfer with a Generative Causal Model of Intuitive Physics, Kansky Tom Silver David A. Mely Mohamed Eldawy Miguel Lazaro-Gredilla Xinghua Lou, Nimrod Dorfman Szymon Sidor Scott Phoenix Dileep George.   Schema Networks are closely related to Object-Oriented MDPs (OO-MDPs) (Diuk et al., 2008) and Relational MDPs (R-MDPs) (Guestrin et al., 2003a).
+
+
 
 ## Policy learning- based approaches
 
@@ -137,32 +142,12 @@ Proposes a reusable neural network module to reason about the relations between 
 * REINFORCEMENT LEARNING WITH UNSUPERVISED AUXILIARY TASKS (UNREAL). Max Jaderberg et al. 2016. UNREAL algorithm shows that augmenting a deep reinforcement learning agent with auxiliary control and reward prediction tasks can double improvement both in data efficiency and robustness to hyperparameter settings.  A successor in learning speed and the robustness to A3C (Over 87% of human scores).
 
 
-## One/Few-shot approaches
-
-* Siamese Neural Networks for One-shot Image Recognition, Gregory Koch Richard Zemel Ruslan Salakhutdinov
-
-* Optimization as a model for few-shot learning. Ravi and Larochelle, 17
 
 
-
-
-(REPEATED, USE TAGS?): Black-Box Data-efficient Policy Search for Robotics. Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret*
-They unsupervisedly learn perform an action with only 5 episodes and gaussian processes with a robot (Ergo Jr?).
-
-
-## GANS
-
-* Unsupervised Pixel–Level Domain Adaptation with Generative Adversarial Networks, Bousmalis 16  presents an unsupervised approach using a (GAN)–based architecture that is able to learn such a transformation
-in an unsupervised manner, i.e. without using corresponding pairs from the two domains.
-It is the best state of the art approach on unsupervised learning for domain adaptation, improving over:
-Decoupling from the Task-Specific Architecture, Generalization Across Label Spaces, achieve Training Stability and Data Augmentation.
-
-* BEGAN: Boundary Equilibrium Generative Adversarial Networks, David Berthelot et al. 17
-In contrast to traditional GANS that require alternating training D and G, or pretraining D, \textit{BEGAN requires neither to train stably}. The discriminator has two competing goals: auto-encode real images and discriminate
-real from generated images (balanced by gamma). They propose a new equilibrium enforcing method paired with a loss derived from the Wasserstein distance for training auto-encoder based GAN that balances the generator and discriminator during training. It provides a new approximate convergence measure, fast and stable training which controls the trade-off between image diversity and visual quality.
-
-
+########
 ## Validation Methods
+
+Example ways of assessing CNN's performance is measuring networks receptive field [Cite online Tool], or attention maps. Other methods are described below.
 
 * On the Quantitative Evaluation of Deep Generative Models Russ Salakhutdinov  www.cs.cmu.edu/~rsalakhu/talk_Eval.pdf
 
@@ -173,8 +158,16 @@ Interesting paper about evaluating embeddings through Normalization independent 
 
 * Foolbox v0.8.0: A Python toolbox to benchmark the robustness of machine learning models. Rauber17 https://arxiv.org/pdf/1707.04131.pdf
 
-## SURVEYS
 
+
+
+#####
+## METRICS
+Particular metrics of interest to assess quality of prediction go beyond the \textit{blurry} MSE (Mean Squared Error) loss function. Complementary feature learning strategies include multi-scale architectures, adversarial training methods, and image gradient difference loss functions as proposed in \cite{Mathieu15}. More concretely,  the Peak Signal to Noise Ratio, Structural Similarity Index Measure and image sharpness show to be better proxies for next frame prediction assessment \cite{Mathieu15}.
+
+
+#######
+## SURVEYS 
 * Representation Learning: A Review and New Perspectives** <br> Yoshua Bengio, Aaron Courville, and Pascal Vincent, (2012), pdf
 
 * Survey paper on Geometry of Optimization & Implicit Regularization in Deep Learning with Neyshabur, Tomioka, Srebro
@@ -187,6 +180,11 @@ https://arxiv.org/abs/1705.03071
 * Not peer reviewed? https://arxiv.org/pdf/1701.07274.pdf
 
 * Neuroscience-inspired AI: http://www.cell.com/neuron/pdf/S0896-6273(17)30509-3.pdf
+
+* Survey: Flexible decision-making in recurrent neural networks trained with a biologically plausible rule [Miconi16] www.biorxiv.org/content/early/2016/07/26/057729
+
+
+
 
 
 ## Prediction-based learning/ forward models:  http://realai.org/predictive-learning/
@@ -201,7 +199,10 @@ Basic idea: The loss is based on prediction errors of next states.
 
 * MatchNet and TempoNet: CortexNet: a robust predictive deep neural network trained on videos https://engineering.purdue.edu/elab/CortexNet/
 
+* Deep multi-scale video prediction beyond mean square error, Mathieu15. Video Prediction can be done with more robust measures than MSE. In \cite{Mathieu15}, they propose several strategies for next frame prediction evaluation assessing the quality of the prediction in terms of Peak Signal to Noise Ratio, Structural Similarity Index Measure and image sharpness.  
+IDEA: can be extended to be combined with optical flow prediction  and replace optical flow prediction algorithms with next frame prediciotion.
 
+########################
 ## Interpretability  methods for evaluating learned representations
 * Understanding intermediate layers using linear classifier probes. Alain and Bengio 16  https://arxiv.org/pdf/1610.01644.pdf
 
@@ -212,6 +213,7 @@ Approach to Understanding Deep Neural Networks, Kumar et al 17  https://arxiv.or
 
 
 
+########################
 ## Auxiliary tasks for improving learning: http://realai.org/auxiliary-tasks/
 
 * Reinforcement Learning with Unsupervised Auxiliary Tasks 2016  https://arxiv.org/abs/1611.05397
@@ -221,31 +223,37 @@ Approach to Understanding Deep Neural Networks, Kumar et al 17  https://arxiv.or
 
 
 
+#######################
 ## GANS
-
-* State-of-the-art GANs for unsupervised representation learning: BEGAN (or BiGAN?), CycleGAN and pixel based GAN. See Allan Ma survey to appear soon.
+Latent spaces of GAN's generators captures semantic variations in the data distribution due to GANS' shown ability to learn generaltive models mapping simple latent distributions to arbitrarily comples ones \cite{Donahue17}. Some state of the art GANS useful in unsupervised learning are described below.
 
 * BEGAN: Boundary Equilibrium Generative Adversarial Networks, David Berthelot et al.
- In contrast to traditional GANS that require alternating training D and G, or pretraining D, \textit{BEGAN requires neither to train stably}. The discriminator has two competing goals: auto-encode real images and discriminate
- real from generated images (balanced by gamma). They propose a new equilibrium enforcing method paired with a loss derived from the Wasserstein distance for training auto-encoder based GAN that balances the generator and discriminator during training. It provides a new approximate convergence measure, fast and stable training which controls the trade-off between image diversity and visual quality.
+ In contrast to traditional GANS that require alternating training D and G, or pretraining D, \textit{BEGAN requires neither to train stably}. The discriminator has two competing goals: auto-encode real images and discriminate  real from generated images (balanced by gamma). They propose a new equilibrium enforcing method paired with a loss derived from the Wasserstein distance for training auto-encoder based GAN that balances the generator and discriminator during training. It provides a new approximate convergence measure, fast and stable training which controls the trade-off between image diversity and visual quality.
+
+* (BiGAN): Adversarial Feature Learning, Donahue17. Presents an extension of regular GANS to learn the inverse mapping: projecting data back into the latent space that allows the learned feature representation to be useful for auxiliary supervised discrimination tasks that is competitive with unsupervised and self-supervised feature learning.
+
+* GAN to improve learning machine robustness in image segmentation, pose estimation and speech recognition using Houdini loss.  Houdini loss is a product of two terms. The first term is a stochastic margin, that is the probability that the difference between the score of the actual target g(x; y) and that of the predicted target g(x; ^y) is smaller than  N(0; 1). It reflects the confidence of the model in its predictions. Houdini is a lower bound of the task loss and considers the difference between the scores assigned by the network to the ground truth and the prediction, and it converges to the task loss.: Houdini: Fooling Deep Structured Prediction Models, Cisse17.
+
+* Unsupervised Pixel–Level Domain Adaptation with Generative Adversarial Networks, Bousmalis 16  presents an unsupervised approach using a (GAN)–based architecture that is able to learn such a transformation in an unsupervised manner, i.e. without using corresponding pairs from the two domains. It is the best state of the art approach on unsupervised learning for domain adaptation, improving over: Decoupling from the Task-Specific Architecture, Generalization Across Label Spaces, achieve Training Stability and Data Augmentation.
+
+* Soumith Chintala and Yann LeCun. A path to unsupervised learning through adversarial networks. In https://code.facebook.com/posts/1587249151575490/a-path-to-unsupervisedlearning-through-adversarial-networks/, 2016.
+
+* State-of-the-art GANs for unsupervised representation learning: BEGAN,  BiGAN, CycleGAN and pixel based GAN. See Allan Ma survey to appear soon.
+
+* Learning to generate images with perceptual similarity metrics. ICIP 2017. 
 
 
-* GAN to improve learning machine robustness in image segmentation, pose estimation and speech recognition using Houdini loss.  Houdini loss is a product of two terms. The first term is a stochastic margin, that is the
-probability that the difference between the score of the actual target g(x; y) and that of the predicted
-target g(x; ^y) is smaller than  N(0; 1). It reflects the confidence of the model in its predictions. Houdini is a lower bound of the task loss and considers the difference between the scores assigned by the network to the ground truth and the prediction, and it converges to the task loss.: Houdini: Fooling Deep Structured Prediction Models, Cisse17.
-
-
-
+#################
 ## Few-shot learning
 
 * Few-Shot Learning Through an Information Retrieval Lens. Triantafillou, 2017
 * Optimization as a model for few-shot learning. Ravi and Larochelle, 17
 * One-shot imitation learning, Duan17.
-
+* Prototypical networks for few-shot learning. [web page] Snell17
 
 
 ## Category labels found that expand across papers (to decide if they are columns to add to our paper table?)
-Prediction-based/same as forward models?
+Prediction-based is same  or a subset of forward models?
 
 reward-less
 Using priors
@@ -261,8 +269,13 @@ self-supervision
 * BetaVAE-Learning basic visual Concepts with a constrained variational framework https://openreview.net/pdf?id=Sy2fzU9gl
 * Pixel Objectness, Jain17. https://arxiv.org/abs/1701.05349
 
+##################
 ## non classified/other interesting papers / visual representation learning:
 
+* Extending LSTMs with Neural Hawkes Process for event prediction based on timestamps, as opposed to using only the sequentiality of events: https://www.cs.colorado.edu/~mozer/Research/Selected%20Publications/talks/Mozer_NeuralHawkesProcessMemory_NIPS2016.pdf
+
+
+#####################
 ### Unsupervised Imitation learning: https://sermanet.github.io/imitation/
 
 *Unsupervised Perceptual Rewards for Imitation Learning was presented at RSS 2017 by Kelvin Xu
@@ -277,6 +290,19 @@ ICCV (2015)
 * Unsupervised learning.: DEEP UNSUPERVISED LEARNING THROUGH SPATIAL
 CONTRASTING Hoffer16 https://arxiv.org/pdf/1610.00243.pdf  Equivalent to DistanceRatioCriterion implemented in Torch for triple based comparison loss function. 
 
+#####################
+##  One/Few-shot approaches
+
+* Siamese Neural Networks for One-shot Image Recognition, Gregory Koch Richard Zemel Ruslan Salakhutdinov
+
+* Optimization as a model for few-shot learning. Ravi and Larochelle, 17
+
+
+(REPEATED, USE TAGS?): Black-Box Data-efficient Policy Search for Robotics. Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret*
+They unsupervisedly learn perform an action with only 5 episodes and gaussian processes with a robot (Ergo Jr?).
+
+
+
 ## No reward learning
 
 * Curiosity-driven Exploration by Self-supervised Prediction. Deepak Pathak et al. \cite{Pathak17} http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf
@@ -285,3 +311,40 @@ Self-supervised approach.
 
 ### CVPR 17 Best papers
 Learning from Simulated and Unsupervised Images through Adversarial Training, Ashish Shrivastava
+
+
+
+#####
+## Miscelanea
+
+* Neural Hawkes Process Memory: https://www.cs.colorado.edu/~mozer/Research/Selected%20Publications/talks/Mozer_NeuralHawkesProcessMemory_NIPS2016.pdf   The	neural	Hawkes	process	memory	belongs	to	two	new	classes	of	neural	net	models	that	are	emerging.
+* Models	that	perform	dynamic	parameter	inference	as	a	sequence	is	
+processed	(vs.	stochastic	gradient	based	adaptation)
+see	also	Fast	Weights paper	by	Ba,	Hinton,	Mnih,	Leibo,	&	Ionescu (2016),	Tau	
+Net paper	by	Nguyen	&	Cottrell	(1997)
+* Models	that	operate	in	a	continuous	time	environment
+see	also	Phased	LSTM	paper	by	Neil,	Pfeiffer,	Liu	(2016)	
+
+
+* Discrete-Event Continuous-Time Recurrent Nets Mozer17
+
+
+
+
+####
+## Neuroscience inspired AI:
+
+* Spacing effects in learning: a temporal ridgeline of optimal retention. Cepeda08
+
+
+
+### FUTURE WORK IDEAS
+
+* From Computational Neuroscience lab of Uni. of Tartu http://neuro.cs.ut.ee/lab/
+Theory of mind is the ability to assign distinct mental states (beliefs, intents, knowledge,…) to other members. In this project, we aim to teach agents via reinforcement learning to solve a perspective-taking task that requires the agent to consider the perceptual state of another. 
+
+Partial information decomposition: estimating who knows what in complex sytems:
+Mutual information quantifies the amount of information shared by two random variables. Such measure has been extensively applied to quantify information flowing in natural and man-made communication channels. However, it has been argued that an information theoretic description of computation (as opposed to simply communication) requires to quantify the distribution of information that a set of input variables has about an output variable. In particular, such information could be provided individually (unique), redundantly (shared), or exclusively jointly (synergetic). The partial information decomposition (PID) is an axiomatic framework to define such information distributions. In this project together with the group of Dirk Oliver Theis, we are developing a numerical estimator of PID and applying it to understand how information is distributed across parts of different complex systems.    
+
+IDEA: could we use PID ideas to drive intrinsic motivation-based RL with multiagents?
+ .
