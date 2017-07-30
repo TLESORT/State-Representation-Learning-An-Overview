@@ -170,8 +170,7 @@ Particular metrics of interest to assess quality of prediction go beyond the \te
 ## SURVEYS 
 * Representation Learning: A Review and New Perspectives** <br> Yoshua Bengio, Aaron Courville, and Pascal Vincent, (2012), pdf
 
-* Survey paper on Geometry of Optimization & Implicit Regularization in Deep Learning with Neyshabur, Tomioka, Srebro
-https://arxiv.org/abs/1705.03071
+* Survey paper on Geometry of Optimization & Implicit Regularization in Deep Learning with Neyshabur, Tomioka, Srebro  https://arxiv.org/abs/1705.03071
 
 * A survey on metric learning for feature vectors and structured data. Aurélien Bellet, Amaury Habrard, and Marc Sebban.  2013
 
@@ -183,6 +182,7 @@ https://arxiv.org/abs/1705.03071
 
 * Survey: Flexible decision-making in recurrent neural networks trained with a biologically plausible rule [Miconi16] www.biorxiv.org/content/early/2016/07/26/057729
 
+* X. Zhu, “Semi-Supervised Learning Literature Survey,” Technical Report 1530, Univ. of Wisconsin-Madison, 2006.
 
 
 
@@ -201,6 +201,8 @@ Basic idea: The loss is based on prediction errors of next states.
 
 * Deep multi-scale video prediction beyond mean square error, Mathieu15. Video Prediction can be done with more robust measures than MSE. In \cite{Mathieu15}, they propose several strategies for next frame prediction evaluation assessing the quality of the prediction in terms of Peak Signal to Noise Ratio, Structural Similarity Index Measure and image sharpness.  
 IDEA: can be extended to be combined with optical flow prediction  and replace optical flow prediction algorithms with next frame prediciotion.
+
+*  Value Prediction Networks (VPN) \cite{Oh17} (see summary in forward models) 
 
 ########################
 ## Interpretability  methods for evaluating learned representations
@@ -224,7 +226,7 @@ Approach to Understanding Deep Neural Networks, Kumar et al 17  https://arxiv.or
 
 
 #######################
-## GANS
+## GANS and generative models for data augmentation
 Latent spaces of GAN's generators captures semantic variations in the data distribution due to GANS' shown ability to learn generaltive models mapping simple latent distributions to arbitrarily comples ones \cite{Donahue17}. Some state of the art GANS useful in unsupervised learning are described below.
 
 * BEGAN: Boundary Equilibrium Generative Adversarial Networks, David Berthelot et al.
@@ -241,6 +243,18 @@ Latent spaces of GAN's generators captures semantic variations in the data distr
 * State-of-the-art GANs for unsupervised representation learning: BEGAN,  BiGAN, CycleGAN and pixel based GAN. See Allan Ma survey to appear soon.
 
 * Learning to generate images with perceptual similarity metrics. ICIP 2017. 
+
+* GLO: "Optimizing the Latent Space of Generative Networks" Piotr Bojanowskii, Armand Joulin, David Lopez-Paz, and Arthur Szlam. Summary by LeCunn:
+Short story: GLO model (Generative Latent Optimization) is a generative model in which a set of latent variables is optimized at training time to minimize a distance between a training sample and a reconstruction of it produced by the generator. This alleviates the need to train a discriminator as in GAN.
+Slightly less short story: GLO, like GAN and VAE, is a way to train a generative model under uncertainty on the output.
+A generative model must be able to generate a whole series of different outputs, for example, different faces, or different bedroom images.
+Generally, a set of latent variables Z is drawn at random every time the model needs to generate an output. These latent variables are fed to a generator G that produces an output Y(e.g. an image) Y=G(Z).
+Different drawings of the latent variable result in different images being produced, and the latent variable can be seen as parameterizing the set of outputs.
+In GAN, the latent variable Z is drawn at random during training, and a discriminator is trained to tell if the generated output looks like it's been drawn from the same distribution as the training set.
+In GLO, the latent variable Z is optimized during training so as to minimize some distance measure between the generated sample and the training sample Z* = min_z = Distance(Y,G(Z)). The parameters of the generator are adjusted after this minimization. The learning process is really a joint optimization of the distance with respect to Z and to the parameters of G, averaged on a training set of samples.
+After training, Z can be sampled from their allowed set to produce new samples. Nice examples are shown in the paper.
+GLO belongs to a wide category of energy-based latent variable models: define a parameterized energy function E(Y,Z), define a "free energy" F(Y) = min_z E(Y,Z). Then find the parameters that minimize F(Y) averaged over your training set, making sure to put some constraints on Z so that F(Y) doesn't become uniformly flat (and takes high values outside of the region of high data density). This basic model is at the basis of sparse modeling, sparse auto-encoders, and the "predictive sparse decomposition" model. In these models, the energy contains a term that forces Z to be sparse, and the reconstruction of Y from Z is linear. In GLO, the reconstruction is computed by a deconvolutional net.
+
 
 
 #################
@@ -326,7 +340,7 @@ Net paper	by	Nguyen	&	Cottrell	(1997)
 see	also	Phased	LSTM	paper	by	Neil,	Pfeiffer,	Liu	(2016)	
 
 
-* Discrete-Event Continuous-Time Recurrent Nets Mozer17
+* Discrete-Event Continuous-Time Recurrent Nets Mozer17 Looks at different scales on timed events for prediction-based learning.
 
 
 

@@ -7,7 +7,9 @@ Take home learnings:
 
 * Yosinksi14: How transferable are features in deep neural networks. 
 
-* Carlos Mestre work: From continuous actions by demonstration, passing to discrete action instruction to a robot ("Push glass to right") and back to continuous actions of the robot to perform the task. First contribution in this field: Context-Based Generation of Continuous Actions to Reproduce Effects on Objects https://www.youtube.com/watch?v=Zhd-P3rouyc&feature=youtu.be
+* Carlos Maestre work: From continuous actions by demonstration, passing to discrete action instruction to a robot ("Push glass to right") and back to continuous actions of the robot to perform the task. First contribution in this field: Context-Based Generation of Continuous Actions to Reproduce Effects on Objects https://www.youtube.com/watch?v=Zhd-P3rouyc&feature=youtu.be
+
+* Training tricks of the trade: Efficient backprop, LeCunn98.
 
 
 DEFINITIONS
@@ -44,7 +46,7 @@ return, the update should follow the policy gradient
 [15]. The main idea behind actor-critic algorithms is that the
 critic provides the actor with the policy gradient.
 
-sequence R1..RN are normalized so that the minimum value of this sequence is -1.
+Sequence R1..RN are normalized so that the minimum value of this sequence is -1.
 
 
 

@@ -6,6 +6,7 @@ Predicting context is critical for tackling unsupervised learning and being able
 * Loss is its own Reward: self-supervision for RL:
 Self-supervised pre-training and joint optimization improve the data efficiency and policy returns of end-to-end reinforcement learning. This paper shows the critical role of representation learning and confirms that re-training a decapitated agent, having destroyed the policy and value outputs while preserving the rest of the representation, is far faster than the initial training.
 
+* Value Prediction Networks (VPN) \cite{Oh17} integrate model-free and model-based RL methods into a single neural network. In contrast to typical model-based RL methods, VPN learns a dynamics model whose abstract states are trained to make option-conditional predictions of future values (discounted sum of rewards) rather than of future observations. VPN has several advantages over both model-free and model-based baselines in a stochastic environment where careful planning is required but building an accurate observation-prediction model is difficult. Because they outperform Deep Q-Network (DQN) on several Atari games with short-lookahead planning Atari games, can be a potential new way of learning state representations.
 
 * Deepmind Imagination-augmented agents.
 
