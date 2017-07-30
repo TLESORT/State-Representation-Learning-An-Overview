@@ -81,6 +81,8 @@ PVE considers 1) Conceptual abstraction. 2) Compositional structure. 3) Common s
 
 - **Loss is its own Reward: Self-Supervision for Reinforcement Learning** (2016) <br>
  *Evan Shelhamer, Parsa Mahmoudieh, Max Argus, Trevor Darrell* [pdf](https://arxiv.org/pdf/1612.07307.pdf)
+Self-supervised pre-training and joint optimization using auxiliary losses in the absence of rewards improve the
+data efficiency and policy returns of end-to-end reinforcement learning \cite{Shelhamer17}.
 
 
 ## Embedded (metric) Learning
@@ -98,7 +100,11 @@ Their inconvenient is the need to learn a dense representation before doing matc
 - **Learning to Filter with Predictive State Inference Machines** , *Wen Sun, Arun Venkatraman, Byron Boots, J. Andrew Bagnell*, (2016) [pdf](https://arxiv.org/pdf/1512.08836)
 
 
+## End-to-end approaches:
+End-to-end reinforcement learning (RL) addresses representation learning at the same time as policy optimization, where current efforts tackle this problem normally from the point of view of stochastic optimization and exploration.
 
+## Self-supervision
+Self-supervised auxiliary losses extend the limitations of traditional reinforcement learning to learn from all experience, whether rewarded or not \cite{Shelhamer17}
 
 ## Against Priors
 * Learning Visual Reasoning Without Strong Priors
@@ -118,7 +124,7 @@ Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville, 20
 
 * Reasoning about Time and Knowledge Neural-Symbolic Learning Systems, d’Avila Garcez et al., NIPS 2004.
 
-* A simple neural network module for relational reasoning, Santoro et al. 2017. 
+* A simple neural network module for relational reasoning, Santoro et al. 2017.
 Proposes a reusable neural network module to reason about the relations between entities and their properties, where an MLP approximates object-to-object relation function and other MLP transforms summed pairwise object-to-object relations to some desired output (RN's operate on sets (due to summation in the formula) and thus are invariant to the order of objects in the input). -> Can we establish thus domain and range in relationships? future extension? In terms of architecture, RN module is used at the tail of a neural network taking input objects in form of CNN or LSTM embeddings. This work is evaluated on several tasks where it achieves reasonably good (even superhuman) performance (CLEVR and Sort-of-CLEVR - question answering about an image0
 
 * Graph convolutional Auto-Encoders. Thomas Kipf‏ @thomaskipf Graph auto-encoders (in TensorFlow) is now available on GitHub: https://github.com/tkipf/gae
@@ -167,14 +173,14 @@ Particular metrics of interest to assess quality of prediction go beyond the \te
 
 
 #######
-## SURVEYS 
+## SURVEYS
 * Representation Learning: A Review and New Perspectives** <br> Yoshua Bengio, Aaron Courville, and Pascal Vincent, (2012), pdf
 
 * Survey paper on Geometry of Optimization & Implicit Regularization in Deep Learning with Neyshabur, Tomioka, Srebro  https://arxiv.org/abs/1705.03071
 
 * A survey on metric learning for feature vectors and structured data. Aurélien Bellet, Amaury Habrard, and Marc Sebban.  2013
 
-* Deep learning in neural networks: An overview. Schmidhuber, Jürgen Neural Networks - 2015 
+* Deep learning in neural networks: An overview. Schmidhuber, Jürgen Neural Networks - 2015
 
 * Not peer reviewed? https://arxiv.org/pdf/1701.07274.pdf
 
@@ -193,7 +199,7 @@ Basic idea: The loss is based on prediction errors of next states.
 
 * Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large-Scale Data Collection. The Google dataset release paper proposes a continuous servoing mechanism that uses \textit{the grasp prediction network to choose the motor commands for the robot that will maximize the probability of a success grasp}.  https://arxiv.org/pdf/1603.02199.pdf
 
-* Learning State Representation for Deep Actor-Critic Control. Jelle Munk 2016. On predictive priors:  Ils utilisent simplement le fait que l'état doit permettre de prédire efficacement le prochain état et la récompense. Ca pourrait être assez simple a tester dans notre cas j'imagine.
+* Learning State Representation for Deep Actor-Critic Control. Jelle Munk 2016. On predictive priors:  Ils utilisent simplement le fait que l'état doit permettre de prédire efficacement le prochain état et la récompense. Ca pourrait être assez simple a tester dans notre cas j'imagine. See summary in fwd models.
 
 * Learning a forward/inverse model to learn good representations : https://arxiv.org/pdf/1612.07307.pdf
 
@@ -202,7 +208,7 @@ Basic idea: The loss is based on prediction errors of next states.
 * Deep multi-scale video prediction beyond mean square error, Mathieu15. Video Prediction can be done with more robust measures than MSE. In \cite{Mathieu15}, they propose several strategies for next frame prediction evaluation assessing the quality of the prediction in terms of Peak Signal to Noise Ratio, Structural Similarity Index Measure and image sharpness.  
 IDEA: can be extended to be combined with optical flow prediction  and replace optical flow prediction algorithms with next frame prediciotion.
 
-*  Value Prediction Networks (VPN) \cite{Oh17} (see summary in forward models) 
+*  Value Prediction Networks (VPN) \cite{Oh17} (see summary in forward models)
 
 ########################
 ## Interpretability  methods for evaluating learned representations
@@ -223,37 +229,6 @@ Approach to Understanding Deep Neural Networks, Kumar et al 17  https://arxiv.or
 * The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously, 2017  https://arxiv.org/pdf/1707.03300.pdf
 
 
-
-
-#######################
-## GANS and generative models for data augmentation
-Latent spaces of GAN's generators captures semantic variations in the data distribution due to GANS' shown ability to learn generaltive models mapping simple latent distributions to arbitrarily comples ones \cite{Donahue17}. Some state of the art GANS useful in unsupervised learning are described below.
-
-* BEGAN: Boundary Equilibrium Generative Adversarial Networks, David Berthelot et al.
- In contrast to traditional GANS that require alternating training D and G, or pretraining D, \textit{BEGAN requires neither to train stably}. The discriminator has two competing goals: auto-encode real images and discriminate  real from generated images (balanced by gamma). They propose a new equilibrium enforcing method paired with a loss derived from the Wasserstein distance for training auto-encoder based GAN that balances the generator and discriminator during training. It provides a new approximate convergence measure, fast and stable training which controls the trade-off between image diversity and visual quality.
-
-* (BiGAN): Adversarial Feature Learning, Donahue17. Presents an extension of regular GANS to learn the inverse mapping: projecting data back into the latent space that allows the learned feature representation to be useful for auxiliary supervised discrimination tasks that is competitive with unsupervised and self-supervised feature learning.
-
-* GAN to improve learning machine robustness in image segmentation, pose estimation and speech recognition using Houdini loss.  Houdini loss is a product of two terms. The first term is a stochastic margin, that is the probability that the difference between the score of the actual target g(x; y) and that of the predicted target g(x; ^y) is smaller than  N(0; 1). It reflects the confidence of the model in its predictions. Houdini is a lower bound of the task loss and considers the difference between the scores assigned by the network to the ground truth and the prediction, and it converges to the task loss.: Houdini: Fooling Deep Structured Prediction Models, Cisse17.
-
-* Unsupervised Pixel–Level Domain Adaptation with Generative Adversarial Networks, Bousmalis 16  presents an unsupervised approach using a (GAN)–based architecture that is able to learn such a transformation in an unsupervised manner, i.e. without using corresponding pairs from the two domains. It is the best state of the art approach on unsupervised learning for domain adaptation, improving over: Decoupling from the Task-Specific Architecture, Generalization Across Label Spaces, achieve Training Stability and Data Augmentation.
-
-* Soumith Chintala and Yann LeCun. A path to unsupervised learning through adversarial networks. In https://code.facebook.com/posts/1587249151575490/a-path-to-unsupervisedlearning-through-adversarial-networks/, 2016.
-
-* State-of-the-art GANs for unsupervised representation learning: BEGAN,  BiGAN, CycleGAN and pixel based GAN. See Allan Ma survey to appear soon.
-
-* Learning to generate images with perceptual similarity metrics. ICIP 2017. 
-
-* GLO: "Optimizing the Latent Space of Generative Networks" Piotr Bojanowskii, Armand Joulin, David Lopez-Paz, and Arthur Szlam. Summary by LeCunn:
-Short story: GLO model (Generative Latent Optimization) is a generative model in which a set of latent variables is optimized at training time to minimize a distance between a training sample and a reconstruction of it produced by the generator. This alleviates the need to train a discriminator as in GAN.
-Slightly less short story: GLO, like GAN and VAE, is a way to train a generative model under uncertainty on the output.
-A generative model must be able to generate a whole series of different outputs, for example, different faces, or different bedroom images.
-Generally, a set of latent variables Z is drawn at random every time the model needs to generate an output. These latent variables are fed to a generator G that produces an output Y(e.g. an image) Y=G(Z).
-Different drawings of the latent variable result in different images being produced, and the latent variable can be seen as parameterizing the set of outputs.
-In GAN, the latent variable Z is drawn at random during training, and a discriminator is trained to tell if the generated output looks like it's been drawn from the same distribution as the training set.
-In GLO, the latent variable Z is optimized during training so as to minimize some distance measure between the generated sample and the training sample Z* = min_z = Distance(Y,G(Z)). The parameters of the generator are adjusted after this minimization. The learning process is really a joint optimization of the distance with respect to Z and to the parameters of G, averaged on a training set of samples.
-After training, Z can be sampled from their allowed set to produce new samples. Nice examples are shown in the paper.
-GLO belongs to a wide category of energy-based latent variable models: define a parameterized energy function E(Y,Z), define a "free energy" F(Y) = min_z E(Y,Z). Then find the parameters that minimize F(Y) averaged over your training set, making sure to put some constraints on Z so that F(Y) doesn't become uniformly flat (and takes high values outside of the region of high data density). This basic model is at the basis of sparse modeling, sparse auto-encoders, and the "predictive sparse decomposition" model. In these models, the energy contains a term that forces Z to be sparse, and the reconstruction of Y from Z is linear. In GLO, the reconstruction is computed by a deconvolutional net.
 
 
 
@@ -302,7 +277,7 @@ ICCV (2015)
 * CVPR17 http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/%20%20
 
 * Unsupervised learning.: DEEP UNSUPERVISED LEARNING THROUGH SPATIAL
-CONTRASTING Hoffer16 https://arxiv.org/pdf/1610.00243.pdf  Equivalent to DistanceRatioCriterion implemented in Torch for triple based comparison loss function. 
+CONTRASTING Hoffer16 https://arxiv.org/pdf/1610.00243.pdf  Equivalent to DistanceRatioCriterion implemented in Torch for triple based comparison loss function.
 
 #####################
 ##  One/Few-shot approaches
@@ -318,9 +293,10 @@ They unsupervisedly learn perform an action with only 5 episodes and gaussian pr
 
 
 ## No reward learning
+Once a loss on reward is defined, in end-to-end RL systems, the representation is delegated to backpropagation without further attention to other supervisory signals. Representation learning can thus be considered a bottleneck in current approaches bound by reward \cite{Shelhamer17}.  Next we describe some approaches in this line:
 
 * Curiosity-driven Exploration by Self-supervised Prediction. Deepak Pathak et al. \cite{Pathak17} http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf
-Self-supervised approach. 
+Self-supervised approach.
 
 
 ### CVPR 17 Best papers
@@ -332,12 +308,12 @@ Learning from Simulated and Unsupervised Images through Adversarial Training, As
 ## Miscelanea
 
 * Neural Hawkes Process Memory: https://www.cs.colorado.edu/~mozer/Research/Selected%20Publications/talks/Mozer_NeuralHawkesProcessMemory_NIPS2016.pdf   The	neural	Hawkes	process	memory	belongs	to	two	new	classes	of	neural	net	models	that	are	emerging.
-* Models	that	perform	dynamic	parameter	inference	as	a	sequence	is	
+* Models	that	perform	dynamic	parameter	inference	as	a	sequence	is
 processed	(vs.	stochastic	gradient	based	adaptation)
-see	also	Fast	Weights paper	by	Ba,	Hinton,	Mnih,	Leibo,	&	Ionescu (2016),	Tau	
+see	also	Fast	Weights paper	by	Ba,	Hinton,	Mnih,	Leibo,	&	Ionescu (2016),	Tau
 Net paper	by	Nguyen	&	Cottrell	(1997)
 * Models	that	operate	in	a	continuous	time	environment
-see	also	Phased	LSTM	paper	by	Neil,	Pfeiffer,	Liu	(2016)	
+see	also	Phased	LSTM	paper	by	Neil,	Pfeiffer,	Liu	(2016)
 
 
 * Discrete-Event Continuous-Time Recurrent Nets Mozer17 Looks at different scales on timed events for prediction-based learning.
@@ -355,7 +331,7 @@ see	also	Phased	LSTM	paper	by	Neil,	Pfeiffer,	Liu	(2016)
 ### FUTURE WORK IDEAS
 
 * From Computational Neuroscience lab of Uni. of Tartu http://neuro.cs.ut.ee/lab/
-Theory of mind is the ability to assign distinct mental states (beliefs, intents, knowledge,…) to other members. In this project, we aim to teach agents via reinforcement learning to solve a perspective-taking task that requires the agent to consider the perceptual state of another. 
+Theory of mind is the ability to assign distinct mental states (beliefs, intents, knowledge,…) to other members. In this project, we aim to teach agents via reinforcement learning to solve a perspective-taking task that requires the agent to consider the perceptual state of another.
 
 Partial information decomposition: estimating who knows what in complex sytems:
 Mutual information quantifies the amount of information shared by two random variables. Such measure has been extensively applied to quantify information flowing in natural and man-made communication channels. However, it has been argued that an information theoretic description of computation (as opposed to simply communication) requires to quantify the distribution of information that a set of input variables has about an output variable. In particular, such information could be provided individually (unique), redundantly (shared), or exclusively jointly (synergetic). The partial information decomposition (PID) is an axiomatic framework to define such information distributions. In this project together with the group of Dirk Oliver Theis, we are developing a numerical estimator of PID and applying it to understand how information is distributed across parts of different complex systems.    

@@ -40,15 +40,29 @@ the policy  [14]. Actor-critic algorithms are suitable in these situations sinc
 methods, which require a complicated optimization at every time step to find the policy.
 In actor-critic methods, the critic learns the action-value
 function Q while the actor learns the policy . \cite{Munk16}
-In order to
-ensure that updates of the actor improve the expected discounted
+In order to ensure that updates of the actor improve the expected discounted
 return, the update should follow the policy gradient
 [15]. The main idea behind actor-critic algorithms is that the
 critic provides the actor with the policy gradient.
 
 Sequence R1..RN are normalized so that the minimum value of this sequence is -1.
 
+Self-supervised pre-training and joint optimization using auxiliary losses in the absence of rewards improve the
+data efficiency and policy returns of end-to-end reinforcement learning \cite{Shelhamer17}. Re-training a decapitated agent, having destroyed the policy and value outputs while preserving the rest of the representation, is far faster than the initial training. 
 
+[Policy gradient methods iteratively optimize the policy return by estimating the gradient of the expected return with respect to the policy parameters where the expectation is sampled by executing the policy in the environment. To improve optimization, in an actor-critic method the policy gradient can be scaled not by the return itself but by an estimate of the advantage (Sutton & Barto, 1998).] 
+
+While a popular line of attack for unsupervised learning,
+the representations learned by reconstruction are relatively
+poor for transfer (Donahue et al., 2016
 
 # Recommended videos
 GANS, Chintala: https://www.youtube.com/watch?v=QPkb5VcgXAM
+
+
+* 37 reasons your NN is not working
+https://blog.slavv.com/37-reasons-why-your-neural-network-is-not-working-4020854bd607
+
+* SGD Tricks https://www.microsoft.com/en-us/research/publication/stochastic-gradient-tricks/?from=https%3A%2F%2Fresearch.microsoft.com%2Fpubs%2F192769%2Ftricks-2012.pdf
+
+* Network visualization with Tensorboard and Crayon, with support for Lua and Python. In a pinch, you can also print weights/biases/activations.
