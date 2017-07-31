@@ -1,9 +1,21 @@
 
 # Forward/ Predictive Models
 
-Predicting context is critical for tackling unsupervised learning and being able to generate content as indicated by Richard Zemel \cite{}
+next papers to review: 
 
-* Loss is its own Reward: self-supervision for RL:
+## Deepak Pathak, Pulkit Agrawal, Alexei A. Efros and Trevor Darrell. Curiosity-driven Exploration by Self-supervised Prediction. In ICML 2017.
++No reward, forward model, predictive.
+Predicting context is critical for tackling unsupervised learning and being able to generate content \cite{Zemel}.
+Intrinsic Curiosity Module (ICM) helps agents explore and discover the environment out of curiosity when extrinsic rewards are spare or not present at all. Our proposed intrinsic model (ICM) is learned jointly with agent's policy even without any rewards from the environment
+
+
+
+## 2016 November 16, Max Jaderberg, Volodymyr Mnih, Wojciech Marian Czarnecki, Tom Schaul, Joel Z Leibo, David Silver, and Koray Kavukcuoglu. Reinforcement Learning with Unsupervised Auxiliary Tasks. arXiv:1611.05397.
+
+## http://realai.org/auxiliary-tasks/  2017 May 19, Nat Dilokthanakul, Christos Kaplanis, Nick Pawlowski, and Murray Shanahan. Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning. arXiv:1705.06769.
+
+
+## Loss is its own Reward: self-supervision for RL:
 Self-supervised pre-training and joint optimization improve the data efficiency and policy returns of end-to-end reinforcement learning. This paper shows the critical role of representation learning and confirms that re-training a decapitated agent, having destroyed the policy and value outputs while preserving the rest of the representation, is far faster than the initial training.
 
 Self-supervision defines losses via surrogate annotations synthesized from unlabeled data: "rewards capture the task while selfsupervision captures the environment". Since rewards might be delayed and sparse, the losses from self-supervision are instantaneous and ubiquitous: Augmenting RL with these auxiliary losses enriches
@@ -11,9 +23,12 @@ the representation through multi-task learning and improves policy optimization 
 
 [Policy gradient methods iteratively optimize the policy return by estimating the gradient of the expected return with respect to the policy parameters where the expectation is sampled by executing the policy in the environment. To improve optimization, in an actor-critic method the policy gradient can be scaled not by the return itself but by an estimate of the advantage (Sutton & Barto, 1998).] The authors augment the policy gradient with auxiliary gradients from self-supervised tasks.
 
- supervised learning min E[Ldis(f(x); y)]
- unsupervised learning min E[Lgen(f(x); x)]
- self-supervised learning min E[Ldis(f(x); s(x))]   with surrogate annotation function s()
+- supervised learning min E[Ldis(f(x); y)]
+
+- unsupervised learning min E[Lgen(f(x); x)]
+
+- self-supervised learning min E[Ldis(f(x); s(x))]   with surrogate annotation function s()
+
 
 The actor-critic architecture is based on A3C (Mnih et al.,2015) but with capacity reduced for experimental efficiency. The self-supervised architectures share the same encoder as the actor-critic for transferability. Each self-supervised task augments the architecture with its own decoder and loss.
 
@@ -39,27 +54,31 @@ While the transition function is not necessarily one-to-one,
 and the synthetic negatives are noisy, in expectation these
 surrogate annotations will match the transition statistics.
 
-Inverse dynamics mapsSxS-> A is reduced to a classification problem for discrete actions or to regression if continuous ones.  Our self-supervised inverse dynamics task
-is to infer the intervening actions of a history of observations.
-When jAj << jSj, as is often the case, the selfsupervision
-of inverse dynamics may be more statistically
+Inverse dynamics map SxS-> A and is reduced to a classification problem for discrete actions or to regression if continuous ones.  Our self-supervised inverse dynamics task is to infer the intervening actions of a history of observations.
+When jAj << jSj, as is often the case, the self-supervision of inverse dynamics may be more statistically
 and computationally tractable.
 
 While a popular line of attack for unsupervised learning, the representations learned by reconstruction are relatively
-poor for transfer (Donahue et al., 2016. They use it for comparison with their self-supervised auxiliary losses approach. 
+poor for transfer (Donahue et al., 2016). They use it for comparison with their self-supervised auxiliary losses approach. 
 
 
 
 
-* Value Prediction Networks (VPN) \cite{Oh17} integrate model-free and model-based RL methods into a single neural network. In contrast to typical model-based RL methods, VPN learns a dynamics model whose abstract states are trained to make option-conditional predictions of future values (discounted sum of rewards) rather than of future observations. VPN has several advantages over both model-free and model-based baselines in a stochastic environment where careful planning is required but building an accurate observation-prediction model is difficult. Because they outperform Deep Q-Network (DQN) on several Atari games with short-lookahead planning Atari games, can be a potential new way of learning state representations.
+## Value Prediction Networks (VPN) \cite{Oh17} integrate model-free and model-based RL methods into a single neural network. In contrast to typical model-based RL methods, VPN learns a dynamics model whose abstract states are trained to make option-conditional predictions of future values (discounted sum of rewards) rather than of future observations. VPN has several advantages over both model-free and model-based baselines in a stochastic environment where careful planning is required but building an accurate observation-prediction model is difficult. Because they outperform Deep Q-Network (DQN) on several Atari games with short-lookahead planning Atari games, can be a potential new way of learning state representations.
 
-* Deepmind Imagination-augmented agents.
+## Deepmind Imagination-augmented agents.
 
 The agents DeepMind introduce benefit from an ‘imagination encoder’- a neural network which learns to extract any information useful for the agent’s future decisions, but ignore what is not relevant. From their blog, the imagination-augmented agents outperform the imagination-less baselines considerably: they learn with less experience and are able to deal with the imperfections in modelling the environment. Because agents are able to extract more knowledge from internal simulations they can solve tasks more with fewer imagination steps than conventional search methods, like the Monte Carlo tree search.
 When we add an additional ‘manager’ component, which helps to construct a plan, the agent learns to solve tasks even more efficiently with fewer steps. In the spaceship task it can distinguish between situations where the gravitational pull of its environment is strong or weak, meaning different numbers of these imagination steps are required. When an agent is presented with multiple models of an environment, each varying in quality and cost-benefit, it learns to make a meaningful trade-off. Finally, if the computational cost of imagination increases with each action taken, the agent imagines the effect of multiple chained actions early, and relies on this plan later without invoking imagination again.
 
 
-* Predictive priors paper: * Learning State Representation for Deep Actor-Critic Control. Jelle Munk 2016.
+## Predictive priors paper: * Learning State Representation for Deep Actor-Critic Control. Jelle Munk 2016.
+KEY POINT: The problem with a binary reward function is that the agent will not receive any learning signal until it hits the food by coincidence. In some problems (like the octopus and the 2-arm) that can take a long time, especially if you start with a random policy. In some other papers [8][13] they reduced the dimensionality of the action space by working with either binary inputs or defining some macro actions. I did not want to do this (because I felt this would probably degrade the final performance) so I added a distance measure to my reward function. This way the agent always has some learning signal, even if it does not reach the target within a single episode. 
+[13] Nicolas Heess, David Silver, and Yee Whye Teh. Actor-critic reinforcement learning with energy-based policies. In EWRL, pages 43–58. Citeseer, 2012.
+[8] Yaakov Engel, Peter Szabo, and Dmitry Volkinshtein. Learning to control an octopus arm with gaussian process temporal difference methods. In Advances in neural information processing systems, pages 347– 354, 2005.
+
+Paper highlights:
+
 State representation learning is a form of unsupervised
 learning, i.e., there are no training examples available since
 it is not known a priori what the most suitable state representation
@@ -184,20 +203,19 @@ distance D between the reference position and the current position of the tip of
 By r(D, theta) = -(D + w*|theta|_2)
 where w represent the trade-off between the two terms.
 
-------
 
 
 
 
 
-* DEEP MULTI-SCALE VIDEO PREDICTION BEYOND MEAN SQUARE ERROR. Mathieu15
+## DEEP MULTI-SCALE VIDEO PREDICTION BEYOND MEAN SQUARE ERROR. Mathieu15
 Complementary feature learning strategies beyond MSE include multi-scale architectures, adversarial training methods, and image gradient difference loss functions as proposed in \cite{Mathieu15}. More concretely,  the Peak Signal to Noise Ratio, Structural Similarity Index Measure and image sharpness show to be better proxies for next frame prediction assessment \cite{Mathieu15}.  Architectures and losses may be used as building blocks for more sophisticated prediction models, involving memory and recurrence. Because unlike most optical flow algorithms, the model is fully differentiable, it can be fine-tuned for task transfer learning.
 
 
 ### Sequence-based Learning Predictive Models
 IDEA: Can we translate these principles of unaligned (xi,yi) sample pairs to have all data non distributed into recording sequences, and use the loss functions as extra priors? 
 
-*  Unsupervised Sequence Classification using  Sequential Output Statistics. Chen16
+##  Unsupervised Sequence Classification using  Sequential Output Statistics. Chen16
 They propose solving an unsupervised learning problem of having unpaired xi, yi  samples by learning to predict without costly pairing of input data and corresonding labels. They assume that the probability distribution p(y1, . . . , yT ) of the output samples has a sequence structure, i.e., there is temporal dependency over y1, . . . , yT .
 Furthermore, they assume that p(y1, . . . , yT ) is known a priori, which could be estimated from a different data source that has the same distribution of p(y1, . . . , yT).
 Their objective is to learn the posterior probability p(yt|xt, Wd) (i.e., the predictor) from the input sequence {xt} by exploiting the distribution p(y1, . . . , yT ) on the output sequence, where p(y1, . . . , yT ) is learned from another totally unpaired sequence {y1, . . . , yT }.
@@ -214,7 +232,7 @@ Proposes an unsupervised learning cost function based on sequential output stati
 
 
 
-# Auxiliary tasks
+## Auxiliary tasks
 
 For the auxiliary task litterature, exploring the idea that self-generating multiple tasks can allow to learn efficiently single complex tasks, it is indeed a very interesting strand of work. However, the general idea is not new (what is new is to
 do it with DL algorithm), and for example in the team we have studied many dimensions which are not yet integrated into these DL architectures (and so we have opportunities to make original contributions in DL by leveraging them).
@@ -225,10 +243,7 @@ Classical papers of the team on them (outside DL yet) are:
 
 * Active Learning of Inverse Models with Intrinsically Motivated Goal Exploration in Robots. Baranes, A., Oudeyer, P-Y. (2013) Robotics and Autonomous Systems, 61(1), pp. 49-73. http://www.pyoudeyer.com/ActiveGoalExploration-RAS-2013.pdf
 
-* Intrinsically Motivated Learning of Real-World Sensorimotor Skills with Developmental Constraints
-Oudeyer P-Y., Baranes A., Kaplan F. (2013)
-in Intrinsically Motivated Learning in Natural and Artificial Systems, eds. Baldassarre G. and Mirolli M., Springer
-http://www.pyoudeyer.com/OudeyerBaranesKaplan13.pdf
+* Intrinsically Motivated Learning of Real-World Sensorimotor Skills with Developmental Constraints. Oudeyer P-Y., Baranes A., Kaplan F. (2013) in Intrinsically Motivated Learning in Natural and Artificial Systems, eds. Baldassarre G. and Mirolli M., Springer http://www.pyoudeyer.com/OudeyerBaranesKaplan13.pdf
 
 
 
@@ -262,18 +277,14 @@ http://www.pyoudeyer.com/OudeyerBaranesKaplan13.pdf
 * Few-Shot Learning Through an Information Retrieval Lens. Triantafillou17
 Presents an information-retrieval based training objective that simultaneously optimizes all relative orderings of the points in each training batch. How to best exploit the information within each batch, and how to create training batches in order to best leverage the information in the training set, however, remains an open question.
 
-mAP-DLM (max. average precision- Direct Loss Minimization) and mAP-SSVM are presented, and perform similarly. mAP-DLM, minimizes the direct loss directly while mAP-SSVM minimizes an upper bound of it. Comparing with a siamese network (where training batches are created in a way that enforces
-that they have the same amount of information available for each update: each training batch B
-is formed by sampling N classes uniformly at random and |B| examples from these classes. The
-siamese network is then trained on all possible pairs from these sampled points), the mAP alues reached are similar, but the convergence is faster. Training objective: Each batch point is treated as a query and all (dicrete) ranks are computed. All rankins are opitmized simultaneously. 
+mAP-DLM (max. average precision- Direct Loss Minimization) and mAP-SSVM are presented, and perform similarly. mAP-DLM, minimizes the direct loss directly while mAP-SSVM minimizes an upper bound of it. Comparing with a siamese network (where training batches are created in a way that enforces that they have the same amount of information available for each update: each training batch B is formed by sampling N classes uniformly at random and |B| examples from these classes. The siamese network is then trained on all possible pairs from these sampled points), the mAP alues reached are similar, but the convergence is faster. Training objective: Each batch point is treated as a query and all (dicrete) ranks are computed. All rankins are opitmized simultaneously. 
 While siamese training would consider all pairs in a query to perform similarity prediction (predict if the class of each pair of samples is the same or different), in their proposed mAP training, they consider all queries and their rankings,and move the points in the latent space to positions that simultaneously maximize the average precision (AP) of all rankings. 
 
 Some details: Larger batch size implies larger ‘shot’. For example, for N = 8, |B| = 64 results to on average 8 examples of each class in each batch (‘8-shot’) whereas |B| = 16 results to on average 2-shot. When the ‘shot’ is smaller, there is a clear advantage in using their method over the all-pairs siamese.
 
 They harness the power of neural networks for metric learning. These methods vary in terms of loss functions but have in common a mechanism for the parallel and identically-parameterized embedding of the points that will inform the loss function.
 Siamese and triplet networks are commonly-used variants of this family that operate on pairs and triplets, respectively. Example applications include signature verification [8] and face verification [9, 10]. NCA and LMNN have also been extended to their deep variants [11] and [12], respectively.
-These methods often employ hard-negative mining strategies for selecting informative constraints for training [10, 13]. A drawback of siamese and triplet networks is that they are local, in the sense that their loss function concerns pairs or triplets of training examples, guiding the learning process to optimize the desired relative positions of only two or three examples at a time. The myopia of these local methods introduces drawbacks that are reflected in their embedding spaces. [14] propose
-a method to address this by using higher-order information. 
+These methods often employ hard-negative mining strategies for selecting informative constraints for training [10, 13]. A drawback of siamese and triplet networks is that they are local, in the sense that their loss function concerns pairs or triplets of training examples, guiding the learning process to optimize the desired relative positions of only two or three examples at a time. The myopia of these local methods introduces drawbacks that are reflected in their embedding spaces. [14] propose a method to address this by using higher-order information. 
 Relationship between DLM and SSVM: both yield a loss-informed weight update rule. The gradient computation differs from that of the direct loss minimization approach only in that, while SSVM considers the score of the ground-truth F(X; yGT;w), direct loss minimization considers the score of the current prediction F(X; yw;w).
 
 Let f(x;w) be the embedding function, parameterized by a neural network and phi(x1; x2;w) the cosine similarity of points x1 and x2 in the embedding space given by w. phi(x1; x2;w) is typically referred in the literature as the score of a siamese network.

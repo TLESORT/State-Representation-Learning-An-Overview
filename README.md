@@ -319,6 +319,10 @@ see	also	Phased	LSTM	paper	by	Neil,	Pfeiffer,	Liu	(2016)
 * Discrete-Event Continuous-Time Recurrent Nets Mozer17 Looks at different scales on timed events for prediction-based learning.
 
 
+## RL avoiding continuous rewards: reducing the dimensionality of the action space by working with either binary inputs or defining some macro actions (an alternative to have continuous rewards)
+*  Nicolas Heess, David Silver, and Yee Whye Teh. Actor-critic reinforcement learning with energy-based policies. In EWRL, pages 43–58. Citeseer, 2012.
+* Yaakov Engel, Peter Szabo, and Dmitry Volkinshtein. Learning to control an octopus arm with gaussian process temporal difference methods. In Advances in neural information processing systems, pages 347– 354, 2005.
+
 
 
 ####
