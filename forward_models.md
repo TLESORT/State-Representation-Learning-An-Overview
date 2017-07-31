@@ -46,7 +46,7 @@ of inverse dynamics may be more statistically
 and computationally tractable.
 
 While a popular line of attack for unsupervised learning, the representations learned by reconstruction are relatively
-poor for transfer (Donahue et al., 2016. They use it for comparison with their self-supervised auxiliary losses approach. 
+poor for transfer (Donahue et al., 2016. They use it for comparison with their self-supervised auxiliary losses approach.
 
 
 
@@ -139,7 +139,7 @@ Can we clone only the first layer? See how to freeze first layer only (Mat)
 -The actions are scaled such that they have zero mean and a standard deviation of 1. We can scale our actions by sampling the actions : You take many pairs of images at time t and t+1, compute the actions (difference between 2 states) But, since we don't have a very big database, you can compute all actions available. This is how it is done, needs to be done in order to compute mean and std, which we use to normalize the actions right now.
 -In all experiments, the saturation penalty described in Section III, was a necessary condition for the algorithms to converge.
 
-KEY: 
+KEY:
 Loss function of the actor correspond to the Q-function, with a saturation penalty added to the loss function to restrict the action space. In our case It has no saturation penalty, The q-function is a network, defined in baxter_school/rl/learningAlg.py  dqn in defined l248 and learning the Q-function  line 282
 -Learning State Representation for Deep Actor-Critic Control
 -experiments are repeated for different sizes of the ERD, to
@@ -161,7 +161,7 @@ data is available. The advantage of the ML-DDPG over the DDPG seems relatively c
 -We also believe the performance can be further improved by tuning the reward function and/or the architecture of the DNNs which has not been done extensively to get these results
 -reward from the environment is based on the Euclidean distance D between the food and the octopus segment
 -Both algorithms have a similar rise and settling time and are able to learn the task in about
-2000 learning steps. Both successfully learn to reach for the food, which takes them around 1:5s from their starting position. 
+2000 learning steps. Both successfully learn to reach for the food, which takes them around 1:5s from their starting position.
 -??? In order to see if the learned policy also generalized to other initial positions, the octopus arm was randomly excited for 2s before testing the learned policy again. Also, in these cases, the octopus was successful in reaching the food. Perhaps in spite of the high dimensionality of the problem, the Octopus problem is relatively easy since it does not require a very precise control action, like in the case of the 2-link arm
 -Whenever the goal is reached an extra bonus B is given. The reward function is given by
 r(D,B) = (B -2) - D where B = 2 whenever the goal is reached and B = 0 otherwise. Shall we add distance to our reward function to make it continuous?
@@ -195,14 +195,14 @@ Complementary feature learning strategies beyond MSE include multi-scale archite
 
 
 ### Sequence-based Learning Predictive Models
-IDEA: Can we translate these principles of unaligned (xi,yi) sample pairs to have all data non distributed into recording sequences, and use the loss functions as extra priors? 
+IDEA: Can we translate these principles of unaligned (xi,yi) sample pairs to have all data non distributed into recording sequences, and use the loss functions as extra priors?
 
 *  Unsupervised Sequence Classification using  Sequential Output Statistics. Chen16
 They propose solving an unsupervised learning problem of having unpaired xi, yi  samples by learning to predict without costly pairing of input data and corresonding labels. They assume that the probability distribution p(y1, . . . , yT ) of the output samples has a sequence structure, i.e., there is temporal dependency over y1, . . . , yT .
 Furthermore, they assume that p(y1, . . . , yT ) is known a priori, which could be estimated from a different data source that has the same distribution of p(y1, . . . , yT).
 Their objective is to learn the posterior probability p(yt|xt, Wd) (i.e., the predictor) from the input sequence {xt} by exploiting the distribution p(y1, . . . , yT ) on the output sequence, where p(y1, . . . , yT ) is learned from another totally unpaired sequence {y1, . . . , yT }.
 
-* Unsupervised Sequence Classification using Sequential Output Statistics. Liu17. 
+* Unsupervised Sequence Classification using Sequential Output Statistics. Liu17.
 Proposes an unsupervised learning cost function based on sequential output statistics that is harder to optimize but drastically reduces to half the erros in fully supervised learning. It avoids the need for a strong generative model and proposes a stochastic primal-dual gradient method to solve the optimization problem .
 
 * Andrew M Dai and Quoc V Le. Semi-supervised sequence learning. In Proceedings of the Advances in Neural Information Processing Systems (NIPS), pages 3079–3087, 2015.
@@ -265,17 +265,15 @@ Presents an information-retrieval based training objective that simultaneously o
 mAP-DLM (max. average precision- Direct Loss Minimization) and mAP-SSVM are presented, and perform similarly. mAP-DLM, minimizes the direct loss directly while mAP-SSVM minimizes an upper bound of it. Comparing with a siamese network (where training batches are created in a way that enforces
 that they have the same amount of information available for each update: each training batch B
 is formed by sampling N classes uniformly at random and |B| examples from these classes. The
-siamese network is then trained on all possible pairs from these sampled points), the mAP alues reached are similar, but the convergence is faster. Training objective: Each batch point is treated as a query and all (dicrete) ranks are computed. All rankins are opitmized simultaneously. 
-While siamese training would consider all pairs in a query to perform similarity prediction (predict if the class of each pair of samples is the same or different), in their proposed mAP training, they consider all queries and their rankings,and move the points in the latent space to positions that simultaneously maximize the average precision (AP) of all rankings. 
+siamese network is then trained on all possible pairs from these sampled points), the mAP alues reached are similar, but the convergence is faster. Training objective: Each batch point is treated as a query and all (dicrete) ranks are computed. All rankins are opitmized simultaneously.
+While siamese training would consider all pairs in a query to perform similarity prediction (predict if the class of each pair of samples is the same or different), in their proposed mAP training, they consider all queries and their rankings,and move the points in the latent space to positions that simultaneously maximize the average precision (AP) of all rankings.
 
 Some details: Larger batch size implies larger ‘shot’. For example, for N = 8, |B| = 64 results to on average 8 examples of each class in each batch (‘8-shot’) whereas |B| = 16 results to on average 2-shot. When the ‘shot’ is smaller, there is a clear advantage in using their method over the all-pairs siamese.
 
 They harness the power of neural networks for metric learning. These methods vary in terms of loss functions but have in common a mechanism for the parallel and identically-parameterized embedding of the points that will inform the loss function.
 Siamese and triplet networks are commonly-used variants of this family that operate on pairs and triplets, respectively. Example applications include signature verification [8] and face verification [9, 10]. NCA and LMNN have also been extended to their deep variants [11] and [12], respectively.
 These methods often employ hard-negative mining strategies for selecting informative constraints for training [10, 13]. A drawback of siamese and triplet networks is that they are local, in the sense that their loss function concerns pairs or triplets of training examples, guiding the learning process to optimize the desired relative positions of only two or three examples at a time. The myopia of these local methods introduces drawbacks that are reflected in their embedding spaces. [14] propose
-a method to address this by using higher-order information. 
+a method to address this by using higher-order information.
 Relationship between DLM and SSVM: both yield a loss-informed weight update rule. The gradient computation differs from that of the direct loss minimization approach only in that, while SSVM considers the score of the ground-truth F(X; yGT;w), direct loss minimization considers the score of the current prediction F(X; yw;w).
 
 Let f(x;w) be the embedding function, parameterized by a neural network and phi(x1; x2;w) the cosine similarity of points x1 and x2 in the embedding space given by w. phi(x1; x2;w) is typically referred in the literature as the score of a siamese network.
-
-
