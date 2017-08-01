@@ -22,7 +22,7 @@ Domain of aplication :<br>
 
 ## Assessment problematique
 
-The assessment objectif is to give a quantitative value which estimate the quality of a representation. In the context of representation learning this can be harder than expected. The assessment should show if the representaiotn we learned is conform to what we expect.<br>
+The objective of WHAT? assessment?** is to give a quantitative value which estimates the quality of a representation. In the context of representation learning this can be harder than expected. The assessment should show if the representaiotn we learned is conform to what we expect.<br>
 Do we expect something in particular?<br>
 What can we assume other that the information hold by the representation? <- the neighborhood!<br>
 and then what tool can we use?<br>
@@ -297,6 +297,8 @@ Once a loss on reward is defined, in end-to-end RL systems, the representation i
 
 * Curiosity-driven Exploration by Self-supervised Prediction. Deepak Pathak et al. \cite{Pathak17} http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf
 Self-supervised approach.
+
+* 
 
 
 ### CVPR 17 Best papers

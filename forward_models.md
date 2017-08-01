@@ -23,11 +23,11 @@ the representation through multi-task learning and improves policy optimization 
 
 [Policy gradient methods iteratively optimize the policy return by estimating the gradient of the expected return with respect to the policy parameters where the expectation is sampled by executing the policy in the environment. To improve optimization, in an actor-critic method the policy gradient can be scaled not by the return itself but by an estimate of the advantage (Sutton & Barto, 1998).] The authors augment the policy gradient with auxiliary gradients from self-supervised tasks.
 
-- supervised learning min E[Ldis(f(x); y)]
+- supervised learning min \theta E[Ldis(f_\theta(x); y)]
 
-- unsupervised learning min E[Lgen(f(x); x)]
+- unsupervised learning min \theta E[Lgen(f_\theta(x); x)]
 
-- self-supervised learning min E[Ldis(f(x); s(x))]   with surrogate annotation function s()
+- self-supervised learning min \theta E[Ldis(f_\theta(x); s(x))]   with surrogate annotation function s()
 
 
 The actor-critic architecture is based on A3C (Mnih et al.,2015) but with capacity reduced for experimental efficiency. The self-supervised architectures share the same encoder as the actor-critic for transferability. Each self-supervised task augments the architecture with its own decoder and loss.
@@ -72,7 +72,8 @@ The agents DeepMind introduce benefit from an ‘imagination encoder’- a neura
 When we add an additional ‘manager’ component, which helps to construct a plan, the agent learns to solve tasks even more efficiently with fewer steps. In the spaceship task it can distinguish between situations where the gravitational pull of its environment is strong or weak, meaning different numbers of these imagination steps are required. When an agent is presented with multiple models of an environment, each varying in quality and cost-benefit, it learns to make a meaningful trade-off. Finally, if the computational cost of imagination increases with each action taken, the agent imagines the effect of multiple chained actions early, and relies on this plan later without invoking imagination again.
 
 
-## Predictive priors paper: * Learning State Representation for Deep Actor-Critic Control. Jelle Munk 2016.
+## Predictive priors paper: 
+* Learning State Representation for Deep Actor-Critic Control. Jelle Munk 2016.
 KEY POINT: The problem with a binary reward function is that the agent will not receive any learning signal until it hits the food by coincidence. In some problems (like the octopus and the 2-arm) that can take a long time, especially if you start with a random policy. In some other papers [8][13] they reduced the dimensionality of the action space by working with either binary inputs or defining some macro actions. I did not want to do this (because I felt this would probably degrade the final performance) so I added a distance measure to my reward function. This way the agent always has some learning signal, even if it does not reach the target within a single episode. 
 [13] Nicolas Heess, David Silver, and Yee Whye Teh. Actor-critic reinforcement learning with energy-based policies. In EWRL, pages 43–58. Citeseer, 2012.
 [8] Yaakov Engel, Peter Szabo, and Dmitry Volkinshtein. Learning to control an octopus arm with gaussian process temporal difference methods. In Advances in neural information processing systems, pages 347– 354, 2005.
