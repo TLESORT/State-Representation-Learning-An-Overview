@@ -62,7 +62,7 @@ Domain of aplication :<br>
 ### No reward learning
 Once a loss on reward is defined, in end-to-end RL systems, the representation is delegated to backpropagation without further attention to other supervisory signals. Representation learning can thus be considered a bottleneck in current approaches bound by reward \cite{Shelhamer17}.  Next we describe some approaches in this line:
 
-* Curiosity-driven Exploration by Self-supervised Prediction. Deepak Pathak et al. \cite{Pathak17} http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf
+- **Curiosity-driven Exploration by Self-supervised Prediction** (2017) *Deepak Pathak et al.* [pdf](http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf)
 Self-supervised approach.
 
 
@@ -95,29 +95,36 @@ Self-supervised approach.
 
 
 ## End-to-end approaches:
-End-to-end reinforcement learning (RL) addresses representation learning at the same time as policy optimization, where current efforts tackle this problem normally from the point of view of stochastic optimization and exploration.
+- End-to-end reinforcement learning (RL) addresses representation learning at the same time as policy optimization, where current efforts tackle this problem normally from the point of view of stochastic optimization and exploration.
 
 
 
 ## Against Priors
-* Learning Visual Reasoning Without Strong Priors
-Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville, 2017
+- **Learning Visual Reasoning Without Strong Priors** (2017)
+*Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville*
 
 
 
 ######
 ## Physics states and property learning:
-- **Schema Networks: Zero-shot Transfer with a Generative Causal Model of Intuitive Physics**, *Kansky Tom Silver David A. Mely Mohamed Eldawy Miguel Lazaro-Gredilla Xinghua Lou, Nimrod Dorfman Szymon Sidor Scott Phoenix Dileep George*.
+- **Schema Networks: Zero-shot Transfer with a Generative Causal Model of Intuitive Physics** <br> *Kansky Tom Silver David A. Mely Mohamed Eldawy Miguel Lazaro-Gredilla Xinghua Lou, Nimrod Dorfman Szymon Sidor Scott Phoenix Dileep George*.
+
+
    Schema Networks are closely related to Object-Oriented MDPs (OO-MDPs) (Diuk et al., 2008) and Relational MDPs (R-MDPs) (Guestrin et al., 2003a).
 
 
 
 ## Policy learning- based approaches
 
-* Black-Box Data-efficient Policy Search for Robotics. 2017. Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret. Gaussian process regression for policy optimisation using model based policy search. The Black-DROPS algorithm learns a high-dimensional policy from scratch in 5 trials, which are enough to learn the whole dynamics of the arm from scratch. https://arxiv.org/abs/1703.07261  @IROS2017 #resibots
+- **Black-Box Data-efficient Policy Search for Robotics**. (2017) <br> 
+*Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret.*
+
+Gaussian process regression for policy optimisation using model based policy search. The Black-DROPS algorithm learns a high-dimensional policy from scratch in 5 trials, which are enough to learn the whole dynamics of the arm from scratch. https://arxiv.org/abs/1703.07261  @IROS2017 #resibots
 
 
-* REINFORCEMENT LEARNING WITH UNSUPERVISED AUXILIARY TASKS (UNREAL). Max Jaderberg et al. 2016. UNREAL algorithm shows that augmenting a deep reinforcement learning agent with auxiliary control and reward prediction tasks can double improvement both in data efficiency and robustness to hyperparameter settings.  A successor in learning speed and the robustness to A3C (Over 87% of human scores).
+- **REINFORCEMENT LEARNING WITH UNSUPERVISED AUXILIARY TASKS (UNREAL)** (2016) *Max Jaderberg et al.*
+
+UNREAL algorithm shows that augmenting a deep reinforcement learning agent with auxiliary control and reward prediction tasks can double improvement both in data efficiency and robustness to hyperparameter settings.  A successor in learning speed and the robustness to A3C (Over 87% of human scores).
 
 
 
@@ -126,14 +133,16 @@ Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville, 20
 
 Example ways of assessing CNN's performance is measuring networks receptive field [Cite online Tool], or attention maps. Other methods are described below.
 
-* On the Quantitative Evaluation of Deep Generative Models Russ Salakhutdinov  www.cs.cmu.edu/~rsalakhu/talk_Eval.pdf
+- **On the Quantitative Evaluation of Deep Generative Models** <br> *Russ Salakhutdinov*  [pdf](www.cs.cmu.edu/~rsalakhu/talk_Eval.pdf)
 
-* A new embedding quality assessment method for manifold learning, Zhang11. https://arxiv.org/pdf/1108.1636v1.pdf we have their matlab code
+- **A new embedding quality assessment method for manifold learning** <br> *Zhang11*. [pdf](https://arxiv.org/pdf/1108.1636v1.pdf)
+
+we have their matlab code
 Interesting paper about evaluating embeddings through Normalization independent embedding quality (NIEAQA) ssessment, a normalization independent embedding quality criterion, for manifold learning purposes, based on the anisotropic scaling independent measure (ASIM), which compares the similarity between two configurations under motion and anisotropic coordinate scaling. NIEQA is based on ASIM, and consists of three assessments, a local one, a global one and a linear combination of the two. The local measure evaluates how well local neighborhood information is preserved under anisotropic coordinate scaling and rigid motion. NIEQA is valued between 0 and 1, where 0 represents a perfect preservation and its highlights is is the ability of being applicable to both normalized and isometric embeddings, it can provide both local and global assessments, and it can serve as a natural evaluation tool of learned embeddings \cite{Gracia14}.
 
-* A methodology to compare Dimensionality Reduction algorithms in terms of loss of quality. Antonio Gracia, Santiago González, Víctor Robles, Ernestina Menasalvas, 2014
+- **A methodology to compare Dimensionality Reduction algorithms in terms of loss of quality** (2014) <br> *Antonio Gracia, Santiago González, Víctor Robles, Ernestina Menasalvas* 
 
-* Foolbox v0.8.0: A Python toolbox to benchmark the robustness of machine learning models. Rauber17 https://arxiv.org/pdf/1707.04131.pdf
+- **Foolbox v0.8.0: A Python toolbox to benchmark the robustness of machine learning models** (2017) <br> *Rauber17* [pdf](https://arxiv.org/pdf/1707.04131.pdf)
 
 
 ### Interpretability  methods for evaluating learned representations
