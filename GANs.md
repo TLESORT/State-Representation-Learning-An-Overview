@@ -18,13 +18,13 @@ Latent spaces of GAN's generators captures semantic variations in the data distr
 
 * Learning to generate images with perceptual similarity metrics. ICIP 2017.
 
-* GLO: "Optimizing the Latent Space of Generative Networks" Piotr Bojanowskii, Armand Joulin, David Lopez-Paz, and Arthur Szlam. Summary by LeCunn:
-Short story: GLO model (Generative Latent Optimization) is a generative model in which a set of latent variables is optimized at training time to minimize a distance between a training sample and a reconstruction of it produced by the generator. This alleviates the need to train a discriminator as in GAN.
-Slightly less short story: GLO, like GAN and VAE, is a way to train a generative model under uncertainty on the output.
-A generative model must be able to generate a whole series of different outputs, for example, different faces, or different bedroom images.
-Generally, a set of latent variables Z is drawn at random every time the model needs to generate an output. These latent variables are fed to a generator G that produces an output Y(e.g. an image) Y=G(Z).
-Different drawings of the latent variable result in different images being produced, and the latent variable can be seen as parameterizing the set of outputs.
-In GAN, the latent variable Z is drawn at random during training, and a discriminator is trained to tell if the generated output looks like it's been drawn from the same distribution as the training set.
-In GLO, the latent variable Z is optimized during training so as to minimize some distance measure between the generated sample and the training sample Z* = min_z = Distance(Y,G(Z)). The parameters of the generator are adjusted after this minimization. The learning process is really a joint optimization of the distance with respect to Z and to the parameters of G, averaged on a training set of samples.
-After training, Z can be sampled from their allowed set to produce new samples. Nice examples are shown in the paper.
+* GLO: **Optimizing the Latent Space of Generative Networks** Piotr Bojanowskii, Armand Joulin, David Lopez-Paz, and Arthur Szlam. Summary by LeCunn:<br>
+Short story: GLO model (Generative Latent Optimization) is a generative model in which a set of latent variables is optimized at training time to minimize a distance between a training sample and a reconstruction of it produced by the generator. This alleviates the need to train a discriminator as in GAN.<br>
+Slightly less short story: GLO, like GAN and VAE, is a way to train a generative model under uncertainty on the output.<br>
+A generative model must be able to generate a whole series of different outputs, for example, different faces, or different bedroom images.<br>
+Generally, a set of latent variables Z is drawn at random every time the model needs to generate an output. These latent variables are fed to a generator G that produces an output Y(e.g. an image) Y=G(Z).<br>
+Different drawings of the latent variable result in different images being produced, and the latent variable can be seen as parameterizing the set of outputs.<br>
+In GAN, the latent variable Z is drawn at random during training, and a discriminator is trained to tell if the generated output looks like it's been drawn from the same distribution as the training set.<br>
+In GLO, the latent variable Z is optimized during training so as to minimize some distance measure between the generated sample and the training sample Z* = min_z = Distance(Y,G(Z)). The parameters of the generator are adjusted after this minimization. The learning process is really a joint optimization of the distance with respect to Z and to the parameters of G, averaged on a training set of samples.<br>
+After training, Z can be sampled from their allowed set to produce new samples. Nice examples are shown in the paper.<br>
 GLO belongs to a wide category of energy-based latent variable models: define a parameterized energy function E(Y,Z), define a "free energy" F(Y) = min_z E(Y,Z). Then find the parameters that minimize F(Y) averaged over your training set, making sure to put some constraints on Z so that F(Y) doesn't become uniformly flat (and takes high values outside of the region of high data density). This basic model is at the basis of sparse modeling, sparse auto-encoders, and the "predictive sparse decomposition" model. In these models, the energy contains a term that forces Z to be sparse, and the reconstruction of Y from Z is linear. In GLO, the reconstruction is computed by a deconvolutional net.
