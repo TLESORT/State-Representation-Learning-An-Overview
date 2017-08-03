@@ -18,5 +18,14 @@ Models        | Reference     | Supervision  | :fire: Keywords  | Priors | Objec
  Frechet Inception Distance (FID) | Heusel 17  | GANs  | Improved successor of inception
 
 
+Potential column :
 
 
+## Category labels found that expand across papers (to decide if they are columns to add to our paper table?)
+Prediction-based is same  or a subset of forward models?
+
+reward-less
+Using priors
+0ne/few-shot
+By demonstration, cloning, example
+self-supervision

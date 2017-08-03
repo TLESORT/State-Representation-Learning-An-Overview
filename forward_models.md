@@ -3,6 +3,13 @@
 
 next papers to review:
 
+## Self-supervision
+- **Loss is its own Reward: Self-Supervision for Reinforcement Learning** (2016) <br>
+ *Evan Shelhamer, Parsa Mahmoudieh, Max Argus, Trevor Darrell* [pdf](https://arxiv.org/pdf/1612.07307.pdf)
+
+Self-supervised auxiliary losses extend the limitations of traditional reinforcement learning to learn from all experience, whether rewarded or not \cite{Shelhamer17}
+Self-supervised pre-training and joint optimization using auxiliary losses in the absence of rewards improve the data efficiency and policy returns of end-to-end reinforcement learning \cite{Shelhamer17}.
+
 ## Deepak Pathak, Pulkit Agrawal, Alexei A. Efros and Trevor Darrell. Curiosity-driven Exploration by Self-supervised Prediction. In ICML 2017.
 +No reward, forward model, predictive.
 Predicting context is critical for tackling unsupervised learning and being able to generate content \cite{Zemel}.
