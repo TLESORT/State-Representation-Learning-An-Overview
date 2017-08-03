@@ -1,6 +1,6 @@
 
 #######################
-## GANS and generative models for data augmentation
+## GANS and generative models for data augmentation [slides](https://www.slideshare.net/Artifacia/generative-adversarial-networks-and-their-applications)
 Latent spaces of GAN's generators captures semantic variations in the data distribution due to GANS' shown ability to learn generaltive models mapping simple latent distributions to arbitrarily comples ones \cite{Donahue17}. Some state of the art GANS useful in unsupervised learning are described below.
 
 * BEGAN: Boundary Equilibrium Generative Adversarial Networks, David Berthelot et al.
