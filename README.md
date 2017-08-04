@@ -112,7 +112,6 @@ Self-supervised approach.
 
 
 
-######
 ## Physics states and property learning:
 - **Schema Networks: Zero-shot Transfer with a Generative Causal Model of Intuitive Physics** <br> *Kansky Tom Silver David A. Mely Mohamed Eldawy Miguel Lazaro-Gredilla Xinghua Lou, Nimrod Dorfman Szymon Sidor Scott Phoenix Dileep George*.
 
