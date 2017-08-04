@@ -16,6 +16,15 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 :five: Applications <br>
 :six: Validation Methods and Frameworks <br>
 
+## Outline
+:one: Learning a State <br>
+:two: Learning next state <br>
+:two: Learning transiton <br>
+:three: Learning to construct next image <br>
+:four: Learning a metric <br>
+:five: Applications <br>
+:six: Validation Methods and Frameworks <br>
+
 ## Scope of the paper
 
 This paper speak about learning low dimension representation easely interpretable which can be assess thanks to a ground truth. The groundtruth should nethertheless not be use for learning the representation. <br>
