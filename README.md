@@ -8,13 +8,13 @@
 
 Deep learning in robotics is coming. Very soon robot will be able to benefit from the deep learning framework to make complex choices and predictions in a robust and automous fashon. The interesting particularity of a robot is that it's input are , as a human, multimodale. The robot can use it's camera at the same time than a lidar, a radar, a microphone or all the tools you can imagine. For deep learning here come the classic problem of the curse of dimensionality. How to make an algortihm able to make prediction with several high dimension inputs and how make it find hidden dependencies between them online ? The solution is reduce the dimensionality by learning state representation. State representation learning means find the few hidden parameters of each of the input (or modularity). Once the hidden parameters are found the task of finding dependencies between modularities is no more bothered by the dimensionality. This paper aims to cover the state of the art about state representation learning. It presents the different methods used to disentangle the hidden parameters of an datasets and to validate the learned state representation. This overview is particularely focus on learning representation in low dimensionnality (<5) of known parameters like the state of an 3D object. This scope make it possible to assess the representation learned.
 
-## Outline
-:one: Learning with priors <br>
-:two: deterministic autoencoder <br>
-:three: Variational autoencoder family <br>
-:four: Embedded Learning <br>
-:five: Applications <br>
-:six: Validation Methods and Frameworks <br>
+## Scope of the paper
+
+This paper speak about learning low dimension representation easely interpretable which can be assess thanks to a ground truth. The groundtruth should nethertheless not be use for learning the representation. <br>
+The representation can be task specific.<br>
+
+Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minus_sign: Embbed Learning :heavy_minus_sign: Multi modale Learning :heavy_minus_sign: [...]<br>
+
 
 ## Outline
 :one: Learning a State <br>
@@ -25,20 +25,30 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 :five: Applications <br>
 :six: Validation Methods and Frameworks <br>
 
-## Scope of the paper
+## :one: Learning a State
 
-This paper speak about learning low dimension representation easely interpretable which can be assess thanks to a ground truth. The groundtruth should nethertheless not be use for learning the representation. <br>
-The representation can be task specific.<br>
 
-Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minus_sign: Embbed Learning :heavy_minus_sign: Multi modale Learning :heavy_minus_sign: [...]<br>
+- **PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations**, *Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller*, (2017), [pdf](https://arxiv.org/pdf/1705.09805), [arXiv](https://arxiv.org/abs/1705.09805), [Arxiv](https://arxiv.org/abs/1705.09805) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/JonschkowskiHSR17)
+
+- **Learning State Representation for Deep Actor-Critic Control**. Jelle Munk 2016. [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
+
+
+## :two: Learning next state
+## :three: Learning transiton
+## :four: Learning to construct next image
+## :five: Learning a metric
+## :six: Applications
+## :seven: Validation Methods and Frameworks
+
+
+
 
 
 ## :one: Learning with priors [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/LearningWithApriori.md)
 
 
-- **PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations**, *Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller*, (2017), [pdf](https://arxiv.org/pdf/1705.09805), [arXiv](https://arxiv.org/abs/1705.09805), [Arxiv](https://arxiv.org/abs/1705.09805) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/JonschkowskiHSR17)
 
-- **Learning State Representation for Deep Actor-Critic Control**. Jelle Munk 2016. 
+
 
  - **Learning State Representations with Robotic Priors**, *Rico Jonschkowski, Oliver Brock*, (2015) , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) [bib](http://dl.acm.org/citation.cfm?id=2825776)
 
@@ -46,7 +56,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 *Jonathan Scholz, Martin Levihn, Charles L. Isbell, David Wingate*, [pdf](http://proceedings.mlr.press/v32/scholz14.pdf) [bib](http://dl.acm.org/citation.cfm?id=3045014)
 
 
-- **Label-Free Supervision of Neural Networks with Physics and Domain Knowledge**<br> *Russell Stewart , Stefano Ermon*, (2016)
+- **Label-Free Supervision of Neural Networks with Physics and Domain Knowledge**<br> *Russell Stewart , Stefano Ermon*, (2016) [arXiv](https://arxiv.org/abs/1609.05566) [pdf](https://arxiv.org/pdf/1609.05566.pdf)
 
 
 ## :two: Autoencoder [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Autoencoders.md)
