@@ -12,8 +12,8 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 :one: Learning with priors <br>
 :two: deterministic autoencoder <br>
 :three: Variational autoencoder family <br>
-:four: Applications
-:five: Validation Methods and Frameworks 
+:four: Applications <br>
+:five: Validation Methods and Frameworks <br>
 
 ## Scope of the paper
 
