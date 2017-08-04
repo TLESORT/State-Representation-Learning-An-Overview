@@ -12,7 +12,7 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 :one: Learning with priors <br>
 :two: deterministic autoencoder <br>
 :three: Variational autoencoder family <br>
-:four: Embedded Learning
+:four: Embedded Learning <br>
 :five: Applications <br>
 :six: Validation Methods and Frameworks <br>
 
@@ -21,11 +21,7 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 This paper speak about learning low dimension representation easely interpretable which can be assess thanks to a ground truth. The groundtruth should nethertheless not be use for learning the representation. <br>
 The representation can be task specific.<br>
 
-Domain of aplication :<br>
-- robotics<br>
-- data compression<br>
-- embbed learning<br>
-- [...]<br>
+Domain of aplication :heavy_minus_sign: robotics :heavy_minus_sign data compression :heavy_minus_sign: embbed learning :heavy_minus_sign: [...]<br>
 
 
 ## :one: Learning with priors [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/LearningWithApriori.md)
