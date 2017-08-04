@@ -12,8 +12,9 @@ Deep learning in robotics is coming. Very soon robot will be able to benefit fro
 :one: Learning with priors <br>
 :two: deterministic autoencoder <br>
 :three: Variational autoencoder family <br>
-:four: Applications <br>
-:five: Validation Methods and Frameworks <br>
+:four: Embedded Learning
+:five: Applications <br>
+:six: Validation Methods and Frameworks <br>
 
 ## Scope of the paper
 
@@ -61,20 +62,15 @@ Domain of aplication :<br>
 - **Embed to control: A locally linear latent dynamics model for control from raw images** <br> *Watter, Manuel, et al*, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
 
-## Forward/ Predictive Models
+### :four: Embedded (metric) Learning
 
-- **Loss is its own Reward: Self-Supervision for Reinforcement Learning** (2016) <br>
- *Evan Shelhamer, Parsa Mahmoudieh, Max Argus, Trevor Darrell* [pdf](https://arxiv.org/pdf/1612.07307.pdf) :one:
+- **A new embedding quality assessment method for manifold learning** (2016) <br>
+*Yuanyuan Ren, and Bo Zhang*, [pdf](https://arxiv.org/pdf/1108.1636v1.pdf)
 
-### No reward learning
-Once a loss on reward is defined, in end-to-end RL systems, the representation is delegated to backpropagation without further attention to other supervisory signals. Representation learning can thus be considered a bottleneck in current approaches bound by reward \cite{Shelhamer17}.  Next we describe some approaches in this line:
-
-- **Curiosity-driven Exploration by Self-supervised Prediction** (2017) *Deepak Pathak et al.* [pdf](http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf)
-Self-supervised approach.
+- **A Survey on Metric Learning for Feature Vectors and Structured Data** (2013) <br> *Aurélien Bellet, Amaury Habrard, Marc Sebban* [pdf](https://arxiv.org/pdf/1306.6709) [arXiv](https://arxiv.org/abs/1306.6709) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/BelletHS13)
 
 
-
-## :four: Applications of state representaiton learning
+## :five: Applications of state representaiton learning
 
 ### Reinforcement Learning
 
@@ -84,58 +80,7 @@ Self-supervised approach.
  *Evan Shelhamer, Parsa Mahmoudieh, Max Argus, Trevor Darrell* [pdf](https://arxiv.org/pdf/1612.07307.pdf) :two:
 
 
-
-### Embedded (metric) Learning
-
-- **A new embedding quality assessment method for manifold learning** (2016) <br>
-*Yuanyuan Ren, and Bo Zhang*, [pdf](https://arxiv.org/pdf/1108.1636v1.pdf)
-
-- **A Survey on Metric Learning for Feature Vectors and Structured Data** (2013) <br> *Aurélien Bellet, Amaury Habrard, Marc Sebban* [pdf](https://arxiv.org/pdf/1306.6709) [arXiv](https://arxiv.org/abs/1306.6709) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/BelletHS13)
-
-### Multi modal learning
-
-- **Gated-attention architectures for Task-Oriented Language Grounding** (2017) <br>
- *Devendra Singh Chaplot, Kanthashree Mysore Sathyendra, Rama Kumar Pasumarthi, Dheeraj Rajagopal, Ruslan Salakhutdinov* [pdf](https://arxiv.org/pdf/1706.07230) [arXiv](https://arxiv.org/abs/1706.07230) 
-
-## Against State Representation Learning
-- **Learning to Filter with Predictive State Inference Machines** , *Wen Sun, Arun Venkatraman, Byron Boots, J. Andrew Bagnell*, (2016) [pdf](https://arxiv.org/pdf/1512.08836)
-
-
-## End-to-end approaches:
-- End-to-end reinforcement learning (RL) addresses representation learning at the same time as policy optimization, where current efforts tackle this problem normally from the point of view of stochastic optimization and exploration.
-
-
-
-## Against Priors
-- **Learning Visual Reasoning Without Strong Priors** (2017)
-*Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville*
-
-
-
-## Physics states and property learning:
-- **Schema Networks: Zero-shot Transfer with a Generative Causal Model of Intuitive Physics** <br> *Kansky Tom Silver David A. Mely Mohamed Eldawy Miguel Lazaro-Gredilla Xinghua Lou, Nimrod Dorfman Szymon Sidor Scott Phoenix Dileep George*.
-
-
-   Schema Networks are closely related to Object-Oriented MDPs (OO-MDPs) (Diuk et al., 2008) and Relational MDPs (R-MDPs) (Guestrin et al., 2003a).
-
-
-
-## Policy learning- based approaches
-
-- **Black-Box Data-efficient Policy Search for Robotics**. (2017) <br> 
-*Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret.*
-
-Gaussian process regression for policy optimisation using model based policy search. The Black-DROPS algorithm learns a high-dimensional policy from scratch in 5 trials, which are enough to learn the whole dynamics of the arm from scratch. https://arxiv.org/abs/1703.07261  @IROS2017 #resibots
-
-
-- **REINFORCEMENT LEARNING WITH UNSUPERVISED AUXILIARY TASKS (UNREAL)** (2016) *Max Jaderberg et al.*
-
-UNREAL algorithm shows that augmenting a deep reinforcement learning agent with auxiliary control and reward prediction tasks can double improvement both in data efficiency and robustness to hyperparameter settings.  A successor in learning speed and the robustness to A3C (Over 87% of human scores).
-
-
-
-
-## :five: Validation Methods and Frameworks 
+## :six: Validation Methods and Frameworks 
 
 Example ways of assessing CNN's performance is measuring networks receptive field [Cite online Tool], or attention maps. Other methods are described below.
 
@@ -179,6 +124,59 @@ Approach to Understanding Deep Neural Networks, Kumar et al 17  https://arxiv.or
 Particular metrics of interest to assess quality of prediction go beyond the \textit{blurry} MSE (Mean Squared Error) loss function. Complementary feature learning strategies include multi-scale architectures, adversarial training methods, and image gradient difference loss functions as proposed in \cite{Mathieu15}. More concretely,  the Peak Signal to Noise Ratio, Structural Similarity Index Measure and image sharpness show to be better proxies for next frame prediction assessment \cite{Mathieu15}.
 
 
+------------------------------------------------------------------------------------------------
+
+### Forward/ Predictive Models
+
+- **Loss is its own Reward: Self-Supervision for Reinforcement Learning** (2016) <br>
+ *Evan Shelhamer, Parsa Mahmoudieh, Max Argus, Trevor Darrell* [pdf](https://arxiv.org/pdf/1612.07307.pdf) :one:
+
+### No reward learning
+Once a loss on reward is defined, in end-to-end RL systems, the representation is delegated to backpropagation without further attention to other supervisory signals. Representation learning can thus be considered a bottleneck in current approaches bound by reward \cite{Shelhamer17}.  Next we describe some approaches in this line:
+
+- **Curiosity-driven Exploration by Self-supervised Prediction** (2017) *Deepak Pathak et al.* [pdf](http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf)
+Self-supervised approach.
+
+
+### Multi modal learning
+
+- **Gated-attention architectures for Task-Oriented Language Grounding** (2017) <br>
+ *Devendra Singh Chaplot, Kanthashree Mysore Sathyendra, Rama Kumar Pasumarthi, Dheeraj Rajagopal, Ruslan Salakhutdinov* [pdf](https://arxiv.org/pdf/1706.07230) [arXiv](https://arxiv.org/abs/1706.07230) 
+
+## Against State Representation Learning
+- **Learning to Filter with Predictive State Inference Machines** , *Wen Sun, Arun Venkatraman, Byron Boots, J. Andrew Bagnell*, (2016) [pdf](https://arxiv.org/pdf/1512.08836)
+
+
+## End-to-end approaches:
+- End-to-end reinforcement learning (RL) addresses representation learning at the same time as policy optimization, where current efforts tackle this problem normally from the point of view of stochastic optimization and exploration.
+
+
+
+## Against Priors
+- **Learning Visual Reasoning Without Strong Priors** (2017)
+*Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville*
+
+
+
+## Physics states and property learning:
+- **Schema Networks: Zero-shot Transfer with a Generative Causal Model of Intuitive Physics** <br> *Kansky Tom Silver David A. Mely Mohamed Eldawy Miguel Lazaro-Gredilla Xinghua Lou, Nimrod Dorfman Szymon Sidor Scott Phoenix Dileep George*.
+
+
+   Schema Networks are closely related to Object-Oriented MDPs (OO-MDPs) (Diuk et al., 2008) and Relational MDPs (R-MDPs) (Guestrin et al., 2003a).
+
+
+
+## Policy learning- based approaches
+
+- **Black-Box Data-efficient Policy Search for Robotics**. (2017) <br> 
+*Konstantinos Chatzilygeroudis, Roberto Rama, Rituraj Kaushik, Dorian Goepp, Vassilis Vassiliades and Jean-Baptiste Mouret.*
+
+Gaussian process regression for policy optimisation using model based policy search. The Black-DROPS algorithm learns a high-dimensional policy from scratch in 5 trials, which are enough to learn the whole dynamics of the arm from scratch. https://arxiv.org/abs/1703.07261  @IROS2017 #resibots
+
+
+- **REINFORCEMENT LEARNING WITH UNSUPERVISED AUXILIARY TASKS (UNREAL)** (2016) *Max Jaderberg et al.*
+
+UNREAL algorithm shows that augmenting a deep reinforcement learning agent with auxiliary control and reward prediction tasks can double improvement both in data efficiency and robustness to hyperparameter settings.  A successor in learning speed and the robustness to A3C (Over 87% of human scores).
 
 ## Prediction-based learning/ forward models:  http://realai.org/predictive-learning/
 
