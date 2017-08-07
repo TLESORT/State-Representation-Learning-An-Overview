@@ -25,6 +25,8 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 :five: Applications <br>
 :six: Validation Methods and Frameworks <br>
 
+:pencil: resume written
+
 ## :one: Learning a State
 
 
