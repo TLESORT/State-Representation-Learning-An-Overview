@@ -44,15 +44,11 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 - :pencil: **A Physics-Based Model Prior for Object-Oriented MDPs** (2014) <br>
 *Jonathan Scholz, Martin Levihn, Charles L. Isbell, David Wingate*, [pdf](http://proceedings.mlr.press/v32/scholz14.pdf) [bib](http://dl.acm.org/citation.cfm?id=3045014)
 
+- :pencil: **Stable reinforcement learning with autoencoders for tactile and visual data.**<br> *van Hoof, Herke, et al*, (2016) [pdf](https://brml.org/uploads/tx_sibibtex/Hoof2016.pdf)
+
 
 ## :three: Learning transiton
 ## :four: Learning to construct next image
-
-- **Learning to linearize under uncertainty** (2015) <br>
-*R. Goroshin, M. Mathieu, and Y. LeCun* [pdf](https://arxiv.org/pdf/1506.03011.pdf) [arXiv](https://arxiv.org/abs/1506.03011)
-
-- E2C
-
 ## :five: Learning a metric
 ## :six: Applications
 ## :seven: Validation Methods and Frameworks
@@ -61,22 +57,18 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 
 
-## :one: Learning with priors [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/LearningWithApriori.md)
+## Other Related Paper
+
+#### Use of prior about physics
+- :pencil: **Label-Free Supervision of Neural Networks with Physics and Domain Knowledge**<br> *Russell Stewart , Stefano Ermon*, (2016) [arXiv](https://arxiv.org/abs/1609.05566) [pdf](https://arxiv.org/pdf/1609.05566.pdf)
 
 
-
-
-
-
-
-
-- **Label-Free Supervision of Neural Networks with Physics and Domain Knowledge**<br> *Russell Stewart , Stefano Ermon*, (2016) [arXiv](https://arxiv.org/abs/1609.05566) [pdf](https://arxiv.org/pdf/1609.05566.pdf)
-
+************************************************************************************
 
 ## :two: Autoencoder [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Autoencoders.md)
 
 
-- **Stable reinforcement learning with autoencoders for tactile and visual data.**<br> *van Hoof, Herke, et al*, (2016)
+
 - **Deep Spatial Autoencoders for Visuomotor Learning**<br> *Finn, Chelsea, et al.*, (2015)
 
 
