@@ -48,13 +48,17 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 - :pencil: **Stable reinforcement learning with autoencoders for tactile and visual data.**<br> *van Hoof, Herke, et al*, (2016) [pdf](https://brml.org/uploads/tx_sibibtex/Hoof2016.pdf)
 
 
-## :three: Learning transiton
-## :four: Learning to construct next image
+## :three: Learning transition
+## :four: Learning to construct next image (or observation)
 
 - **Learning to linearize under uncertainty** (2015) <br>
 *R. Goroshin, M. Mathieu, and Y. LeCun* [arXiv](https://arxiv.org/abs/1506.03011)
 
 - :pencil: **Embed to control: A locally linear latent dynamics model for control from raw images** <br> *Watter, Manuel, et al*, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
+
+- Closing the learning-planning loop with predictive state representations
+- Autonomous learning of state representations for control
+- Learning predictive state representations
 
 ## :five: Learning a metric
 ## :six: Applications
