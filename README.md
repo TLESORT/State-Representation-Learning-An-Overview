@@ -32,14 +32,15 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 - :pencil: **PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations**, <br> *Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller*, (2017), [pdf](https://arxiv.org/pdf/1705.09805), [arXiv](https://arxiv.org/abs/1705.09805), [Arxiv](https://arxiv.org/abs/1705.09805) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/JonschkowskiHSR17)
 
-- **Learning State Representation for Deep Actor-Critic Control**. Jelle Munk 2016. [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
-
+- :pencil: **Deep Spatial Autoencoders for Visuomotor Learning**<br> *Finn, Chelsea, et al.*, (2015)
 
  - :pencil: **Learning State Representations with Robotic Priors**  (2015) <br> *Rico Jonschkowski, Oliver Brock*, , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) [bib](http://dl.acm.org/citation.cfm?id=2825776)
 
 
 ## :two: Learning next state
 
+
+- **Learning State Representation for Deep Actor-Critic Control**. Jelle Munk 2016. [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
 
 - :pencil: **A Physics-Based Model Prior for Object-Oriented MDPs** (2014) <br>
 *Jonathan Scholz, Martin Levihn, Charles L. Isbell, David Wingate*, [pdf](http://proceedings.mlr.press/v32/scholz14.pdf) [bib](http://dl.acm.org/citation.cfm?id=3045014)
@@ -49,6 +50,11 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 ## :three: Learning transiton
 ## :four: Learning to construct next image
+
+- **Learning to linearize under uncertainty** (2015) <br>
+*R. Goroshin, M. Mathieu, and Y. LeCun* [arXiv](https://arxiv.org/abs/1506.03011)
+- E2C 
+
 ## :five: Learning a metric
 ## :six: Applications
 ## :seven: Validation Methods and Frameworks
@@ -69,7 +75,6 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 
 
-- **Deep Spatial Autoencoders for Visuomotor Learning**<br> *Finn, Chelsea, et al.*, (2015)
 
 
 ## :three: Variational autoencoder family [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Variational.md)
