@@ -47,6 +47,12 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 ## :three: Learning transiton
 ## :four: Learning to construct next image
+
+- **Learning to linearize under uncertainty** (2015) <br>
+*R. Goroshin, M. Mathieu, and Y. LeCun* [pdf](https://arxiv.org/pdf/1506.03011.pdf) [arXiv](https://arxiv.org/abs/1506.03011)
+
+- E2C
+
 ## :five: Learning a metric
 ## :six: Applications
 ## :seven: Validation Methods and Frameworks
