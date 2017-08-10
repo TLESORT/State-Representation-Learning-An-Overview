@@ -40,7 +40,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 ## :two: Learning next state
 
 
-- **Learning State Representation for Deep Actor-Critic Control**. Jelle Munk 2016. [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
+- :pencil: **Learning State Representation for Deep Actor-Critic Control**. Jelle Munk 2016. [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
 
 - :pencil: **A Physics-Based Model Prior for Object-Oriented MDPs** (2014) <br>
 *Jonathan Scholz, Martin Levihn, Charles L. Isbell, David Wingate*, [pdf](http://proceedings.mlr.press/v32/scholz14.pdf) [bib](http://dl.acm.org/citation.cfm?id=3045014)
@@ -53,7 +53,8 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 - **Learning to linearize under uncertainty** (2015) <br>
 *R. Goroshin, M. Mathieu, and Y. LeCun* [arXiv](https://arxiv.org/abs/1506.03011)
-- E2C 
+
+- :pencil: **Embed to control: A locally linear latent dynamics model for control from raw images** <br> *Watter, Manuel, et al*, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
 ## :five: Learning a metric
 ## :six: Applications
@@ -71,21 +72,11 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 ************************************************************************************
 
-## :two: Autoencoder [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Autoencoders.md)
-
-
-
-
-
-## :three: Variational autoencoder family [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Variational.md)
-
 
 - **Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data** , *Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt*, (2017),  [pdf](https://openreview.net/pdf?id=HyTqHL5xg) [arXiv](https://arxiv.org/abs/1605.06432) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2016arXiv160506432K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
 
 - **Deep Kalman Filters**, *Rahul G. Krishnan, Uri Shalit, David Sontag*, (2015), [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv151105121K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
-
-- **Embed to control: A locally linear latent dynamics model for control from raw images** <br> *Watter, Manuel, et al*, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
 
 ### :four: Embedded (metric) Learning
