@@ -19,7 +19,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 ## Outline
 :one: Learning a State <br>
 :two: Learning next state <br>
-:two: Learning transiton <br>
+:two: Learning transition <br>
 :three: Learning to construct next image <br>
 :four: Learning a metric <br>
 :five: Applications <br>
