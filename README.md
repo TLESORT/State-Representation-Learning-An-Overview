@@ -19,7 +19,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 ## Outline
 :one: Learning a State <br>
 :two: Learning next state <br>
-:two: Learning transiton <br>
+:two: Learning transition <br>
 :three: Learning to construct next image <br>
 :four: Learning a metric <br>
 :five: Applications <br>
@@ -32,8 +32,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 - :pencil: **PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations**, <br> *Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller*, (2017), [pdf](https://arxiv.org/pdf/1705.09805), [arXiv](https://arxiv.org/abs/1705.09805), [Arxiv](https://arxiv.org/abs/1705.09805) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/JonschkowskiHSR17)
 
-- **Learning State Representation for Deep Actor-Critic Control**. Jelle Munk 2016. [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
-
+- :pencil: **Deep Spatial Autoencoders for Visuomotor Learning**<br> *Finn, Chelsea, et al.*, (2015)
 
  - :pencil: **Learning State Representations with Robotic Priors**  (2015) <br> *Rico Jonschkowski, Oliver Brock*, , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) [bib](http://dl.acm.org/citation.cfm?id=2825776)
 
@@ -41,12 +40,26 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 ## :two: Learning next state
 
 
+- :pencil: **Learning State Representation for Deep Actor-Critic Control**. Jelle Munk 2016. [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
+
 - :pencil: **A Physics-Based Model Prior for Object-Oriented MDPs** (2014) <br>
 *Jonathan Scholz, Martin Levihn, Charles L. Isbell, David Wingate*, [pdf](http://proceedings.mlr.press/v32/scholz14.pdf) [bib](http://dl.acm.org/citation.cfm?id=3045014)
 
+- :pencil: **Stable reinforcement learning with autoencoders for tactile and visual data.**<br> *van Hoof, Herke, et al*, (2016) [pdf](https://brml.org/uploads/tx_sibibtex/Hoof2016.pdf)
 
-## :three: Learning transiton
-## :four: Learning to construct next image
+
+## :three: Learning transition
+## :four: Learning to construct next image (or observation)
+
+- **Learning to linearize under uncertainty** (2015) <br>
+*R. Goroshin, M. Mathieu, and Y. LeCun* [arXiv](https://arxiv.org/abs/1506.03011)
+
+- :pencil: **Embed to control: A locally linear latent dynamics model for control from raw images** <br> *Watter, Manuel, et al*, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
+
+- Closing the learning-planning loop with predictive state representations
+- Autonomous learning of state representations for control
+- Learning predictive state representations
+
 ## :five: Learning a metric
 ## :six: Applications
 ## :seven: Validation Methods and Frameworks
@@ -55,34 +68,19 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 
 
-## :one: Learning with priors [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/LearningWithApriori.md)
+## Other Related Paper
+
+#### Use of prior about physics
+- :pencil: **Label-Free Supervision of Neural Networks with Physics and Domain Knowledge**<br> *Russell Stewart , Stefano Ermon*, (2016) [arXiv](https://arxiv.org/abs/1609.05566) [pdf](https://arxiv.org/pdf/1609.05566.pdf)
 
 
-
-
-
-
-
-
-- **Label-Free Supervision of Neural Networks with Physics and Domain Knowledge**<br> *Russell Stewart , Stefano Ermon*, (2016) [arXiv](https://arxiv.org/abs/1609.05566) [pdf](https://arxiv.org/pdf/1609.05566.pdf)
-
-
-## :two: Autoencoder [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Autoencoders.md)
-
-
-- **Stable reinforcement learning with autoencoders for tactile and visual data.**<br> *van Hoof, Herke, et al*, (2016)
-- **Deep Spatial Autoencoders for Visuomotor Learning**<br> *Finn, Chelsea, et al.*, (2015)
-
-
-## :three: Variational autoencoder family [Link](https://github.com/TLESORT/State-Representation-Learning-An-Overview/blob/master/Variational.md)
+************************************************************************************
 
 
 - **Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data** , *Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt*, (2017),  [pdf](https://openreview.net/pdf?id=HyTqHL5xg) [arXiv](https://arxiv.org/abs/1605.06432) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2016arXiv160506432K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
 
 - **Deep Kalman Filters**, *Rahul G. Krishnan, Uri Shalit, David Sontag*, (2015), [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv151105121K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
-
-- **Embed to control: A locally linear latent dynamics model for control from raw images** <br> *Watter, Manuel, et al*, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
 
 ### :four: Embedded (metric) Learning
