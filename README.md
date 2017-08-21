@@ -20,7 +20,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 :one: Learning a State <br>
 :two: Learning next state <br>
 :two: Learning transition <br>
-:three: Learning to construct next image <br>
+:three: Learning to construct next image (or observation) <br>
 :four: Learning a metric <br>
 :five: Applications <br>
 :six: Validation Methods and Frameworks <br>
@@ -56,7 +56,8 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 - :pencil: **Embed to control: A locally linear latent dynamics model for control from raw images** <br> *Watter, Manuel, et al*, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
-- Closing the learning-planning loop with predictive state representations
+- **Closing the learning-planning loop with predictive state representations** (2009) <br>
+*Byron Boots, Sajid M. Siddiqi, Geoffrey J. Gordon* [pdf](http://www.cs.cmu.edu/~ggordon/boots-siddiqi-gordon-closing-loop-psrs.pdf)
 - Autonomous learning of state representations for control
 - Learning predictive state representations
 
