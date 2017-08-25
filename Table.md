@@ -9,12 +9,11 @@ Models        | Reference     | Supervision  | :fire: Keywords  | Priors | Objec
 
 
 
- metric        | Reference     | Supervision  | :fire:
+ metrics        | Reference     | Objective  | :fire:
  ------------- | ------------- | -----------  | ------
  Disentanglement metric score | Higgins'17 | Unsupervised representation learning |
  Inception score |  | Generative models (GAN)  |
  Distortion |  | Unsupervised Representation learning  |
- [Survey] | Allan Ma | GANs  |
  Frechet Inception Distance (FID) | Heusel 17  | GANs  | Improved successor of inception
 
 
