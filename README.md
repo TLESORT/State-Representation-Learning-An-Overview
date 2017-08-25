@@ -18,8 +18,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 ## Outline
 :one: Learning a State <br>
-:two: Learning next state <br>
-:two: Learning transition <br>
+:two: Learning next state (transition) - forward model <br>
 :three: Learning to construct next image (or observation) <br>
 :four: Learning a metric <br>
 :five: Applications <br>
