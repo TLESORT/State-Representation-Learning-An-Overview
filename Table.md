@@ -9,7 +9,7 @@ Models        | Reference     | Supervision  | :fire: Keywords  | Priors | Objec
 
 
 
- Models        | Reference     | Supervision  | :fire:
+ metric        | Reference     | Supervision  | :fire:
  ------------- | ------------- | -----------  | ------
  Disentanglement metric score | Higgins'17 | Unsupervised representation learning |
  Inception score |  | Generative models (GAN)  |
