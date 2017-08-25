@@ -1,10 +1,10 @@
-Models        | Reference     | Supervision  | :fire: Keywords  | Priors | Objective function | rewards
- ------------- | ------------- | -----------  | ------  | ------ | ------------------ | ------  
- VAE           | Kingma'14     | No           |         | yes | Variational free energy objective function | no
- InfoGAN       |Chen'16        | No           | scalable| yes | Mutual information | no
- DE-IGN        | Kulkarni'15   | Semi         |         | yes |  | no
- Beta VAE      | Higgins'17    | Semi         | stable  | No | Variational free energy objective function {Jordan99]} with beta =1  | no
- PVE           | Jonschkowsky'17| No           |    | yes |  | no
+Models        | Reference     | Supervision  | :fire: Keywords  | Priors | Objective function | rewards | proxy
+ ------------- | ------------- | -----------  | ------  | ------ | ------------------ | ------  | ------
+ VAE           | Kingma'14     | No           |         | yes | Variational free energy objective function | no | 0
+ InfoGAN       |Chen'16        | No           | scalable| yes | Mutual information | no | 0
+ DE-IGN        | Kulkarni'15   | Semi         |         | yes |  | no | 0
+ Beta VAE      | Higgins'17    | Semi         | stable  | No | Variational free energy objective function {Jordan99]} with beta =1  | no | 0
+ PVE           | Jonschkowsky'17| No           |    | yes |  | no | 0
 
 
 
