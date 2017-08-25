@@ -36,7 +36,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
  - :pencil: **Learning State Representations with Robotic Priors**  (2015) <br> *Rico Jonschkowski, Oliver Brock*, , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) [bib](http://dl.acm.org/citation.cfm?id=2825776)
 
 
-## :two: Learning next state
+## :two: Learning next state / forward model
 
 
 - :pencil: **Learning State Representation for Deep Actor-Critic Control**. Jelle Munk 2016. [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
@@ -48,13 +48,11 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 - :pencil: **Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data** , *Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt*, (2017),  [pdf](https://openreview.net/pdf?id=HyTqHL5xg) [arXiv](https://arxiv.org/abs/1605.06432) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2016arXiv160506432K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
-## :three: Learning transition
+## :three: Learning to retrieve action
 ## :four: Learning to construct next image (or observation)
 
 - :pencil: **Learning to linearize under uncertainty** (2015) <br>
 *R. Goroshin, M. Mathieu, and Y. LeCun* [arXiv](https://arxiv.org/abs/1506.03011)
-
-- :pencil: **Embed to control: A locally linear latent dynamics model for control from raw images** <br> *Watter, Manuel, et al*, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
 - :pencil: **Closing the learning-planning loop with predictive state representations** (2009) <br>
 *Byron Boots, Sajid M. Siddiqi, Geoffrey J. Gordon* [pdf](http://www.cs.cmu.edu/~ggordon/boots-siddiqi-gordon-closing-loop-psrs.pdf)
@@ -62,6 +60,9 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 - Learning predictive state representations
 
 ## :five: Learning a metric
+
+- :pencil: **Embed to control: A locally linear latent dynamics model for control from raw images** <br> *Watter, Manuel, et al*, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
+
 ## :six: Applications
 ## :seven: Validation Methods and Frameworks
 
