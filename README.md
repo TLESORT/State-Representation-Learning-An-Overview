@@ -46,6 +46,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 - :pencil: **Stable reinforcement learning with autoencoders for tactile and visual data.**<br> *van Hoof, Herke, et al*, (2016) [pdf](https://brml.org/uploads/tx_sibibtex/Hoof2016.pdf)
 
+- :pencil: **Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data** , *Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt*, (2017),  [pdf](https://openreview.net/pdf?id=HyTqHL5xg) [arXiv](https://arxiv.org/abs/1605.06432) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2016arXiv160506432K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
 ## :three: Learning transition
 ## :four: Learning to construct next image (or observation)
@@ -76,8 +77,6 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 ************************************************************************************
 
-
-- **Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data** , *Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt*, (2017),  [pdf](https://openreview.net/pdf?id=HyTqHL5xg) [arXiv](https://arxiv.org/abs/1605.06432) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2016arXiv160506432K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
 
 - **Deep Kalman Filters**, *Rahul G. Krishnan, Uri Shalit, David Sontag*, (2015), [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv151105121K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
