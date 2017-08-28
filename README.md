@@ -34,6 +34,15 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 - :pencil: **Deep Spatial Autoencoders for Visuomotor Learning**<br> *Finn, Chelsea, et al.*, (2015)
 
  - :pencil: **Learning State Representations with Robotic Priors**  (2015) <br> *Rico Jonschkowski, Oliver Brock*, , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) [bib](http://dl.acm.org/citation.cfm?id=2825776)
+ 
+ 
+`Related Papers`<br>
+
+- **Slow Feature Analysis: Unsupervised Learning of Invariances** (2002) <br>
+*Laurenz Wiskott and Terrence J. Sejnowski*
+
+- **Incremental Slow Feature Analysis: Adaptive and Episodic Learning from High-Dimensional Input Streams** (2011) <br>
+*Varun Raj Kompella, Matthew Luciw, Juergen Schmidhuber*
 
 
 ## :two: Learning next state / forward model
