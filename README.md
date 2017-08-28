@@ -44,6 +44,8 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 - **Incremental Slow Feature Analysis: Adaptive and Episodic Learning from High-Dimensional Input Streams** (2011) <br>
 *Varun Raj Kompella, Matthew Luciw, Juergen Schmidhuber*
 
+- :pencil: **Label-Free Supervision of Neural Networks with Physics and Domain Knowledge**<br> *Russell Stewart , Stefano Ermon*, (2016) [arXiv](https://arxiv.org/abs/1609.05566) [pdf](https://arxiv.org/pdf/1609.05566.pdf)
+
 
 ## :two: Learning next state / forward model
 
@@ -78,8 +80,6 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 ## Other Related Paper
 
-#### Use of prior about physics
-- :pencil: **Label-Free Supervision of Neural Networks with Physics and Domain Knowledge**<br> *Russell Stewart , Stefano Ermon*, (2016) [arXiv](https://arxiv.org/abs/1609.05566) [pdf](https://arxiv.org/pdf/1609.05566.pdf)
 
 
 ************************************************************************************
