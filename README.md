@@ -35,6 +35,8 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
  - :pencil: **Learning State Representations with Robotic Priors**  (2015) <br> *Rico Jonschkowski, Oliver Brock*, , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) [bib](http://dl.acm.org/citation.cfm?id=2825776)
  
+ - :pencil: **Deep Kalman Filters**, *Rahul G. Krishnan, Uri Shalit, David Sontag*, (2015), [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv151105121K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
+ 
  
 `Related Papers` <br>
 
@@ -86,7 +88,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 
 
-- **Deep Kalman Filters**, *Rahul G. Krishnan, Uri Shalit, David Sontag*, (2015), [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv151105121K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
+
 
 
 ### :four: Embedded (metric) Learning
