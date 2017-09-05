@@ -38,6 +38,9 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
  - :pencil: **Deep Kalman Filters**, (2015) <br>
  *Rahul G. Krishnan, Uri Shalit, David Sontag*, [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv151105121K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
  
+ - **InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets** (2016) <br>
+ *Xi Chen, Yan Duan, Rein Houthoof, John Schulman, Ilya Sutskever, Pieter Abbeel * [pdf](https://arxiv.org/pdf/1606.03657.pdf)
+ 
  
 `Related Papers` <br>
 
