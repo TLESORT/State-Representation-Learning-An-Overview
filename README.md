@@ -72,7 +72,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 *R. Goroshin, M. Mathieu, and Y. LeCun* [pdf](https://arxiv.org/pdf/1506.03011.pdf) [arXiv](https://arxiv.org/abs/1506.03011) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/GoroshinML15)
 
 - :pencil: **Closing the learning-planning loop with predictive state representations** (2009) <br>
-*Byron Boots, Sajid M. Siddiqi, Geoffrey J. Gordon* [pdf](http://www.cs.cmu.edu/~ggordon/boots-siddiqi-gordon-closing-loop-psrs.pdf)
+*Byron Boots, Sajid M. Siddiqi, Geoffrey J. Gordon* [pdf](http://www.cs.cmu.edu/~ggordon/boots-siddiqi-gordon-closing-loop-psrs.pdf) [arXiv](https://arxiv.org/abs/0912.2385) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-0912-2385)
 - **Autonomous learning of state representations for control** (2015) <br>
 *Wendelin Bohmer Jost Tobias Springenberg Joschka Boedecker Martin Riedmiller Klaus Obermayer* [pdf](http://www.ni.tu-berlin.de/fileadmin/fg215/articles/boehmer15b.pdf#cite.Lagoudakis03)
 - Learning predictive state representations
