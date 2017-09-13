@@ -69,7 +69,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 ## :four: Learning to construct next image (or observation)
 
 - :pencil: **Learning to linearize under uncertainty** (2015) <br>
-*R. Goroshin, M. Mathieu, and Y. LeCun* [arXiv](https://arxiv.org/abs/1506.03011)
+*R. Goroshin, M. Mathieu, and Y. LeCun* [pdf](https://arxiv.org/pdf/1506.03011.pdf) [arXiv](https://arxiv.org/abs/1506.03011) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/GoroshinML15)
 
 - :pencil: **Closing the learning-planning loop with predictive state representations** (2009) <br>
 *Byron Boots, Sajid M. Siddiqi, Geoffrey J. Gordon* [pdf](http://www.cs.cmu.edu/~ggordon/boots-siddiqi-gordon-closing-loop-psrs.pdf)
