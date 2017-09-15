@@ -38,7 +38,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
  - :pencil: **Deep Kalman Filters**, (2015) <br>
  *Rahul G. Krishnan, Uri Shalit, David Sontag*, [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv151105121K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
  
- - **InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets** (2016) <br>
+ - :pencil: **InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets** (2016) <br>
  *Xi Chen, Yan Duan, Rein Houthoof, John Schulman, Ilya Sutskever, Pieter Abbeel * [pdf](https://arxiv.org/pdf/1606.03657.pdf)
  
  
@@ -69,18 +69,19 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 ## :four: Learning to construct next image (or observation)
 
 - :pencil: **Learning to linearize under uncertainty** (2015) <br>
-*R. Goroshin, M. Mathieu, and Y. LeCun* [arXiv](https://arxiv.org/abs/1506.03011)
+*R. Goroshin, M. Mathieu, and Y. LeCun* [pdf](https://arxiv.org/pdf/1506.03011.pdf) [arXiv](https://arxiv.org/abs/1506.03011) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/GoroshinML15)
 
 - :pencil: **Closing the learning-planning loop with predictive state representations** (2009) <br>
-*Byron Boots, Sajid M. Siddiqi, Geoffrey J. Gordon* [pdf](http://www.cs.cmu.edu/~ggordon/boots-siddiqi-gordon-closing-loop-psrs.pdf)
-- Autonomous learning of state representations for control
+*Byron Boots, Sajid M. Siddiqi, Geoffrey J. Gordon* [pdf](http://www.cs.cmu.edu/~ggordon/boots-siddiqi-gordon-closing-loop-psrs.pdf) [arXiv](https://arxiv.org/abs/0912.2385) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-0912-2385)
+- **Autonomous learning of state representations for control** (2015) <br>
+*Wendelin Bohmer Jost Tobias Springenberg Joschka Boedecker Martin Riedmiller Klaus Obermayer* [pdf](http://www.ni.tu-berlin.de/fileadmin/fg215/articles/boehmer15b.pdf#cite.Lagoudakis03)
 - Learning predictive state representations
 
 ## :five: Learning a metric
 
 - :pencil: **Embed to control: A locally linear latent dynamics model for control from raw images** <br> *Watter, Manuel, et al*, (2015) [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
-- Deep Kernels for Optimizing Locomotion Controllers [pdf](https://arxiv.org/pdf/1707.09062)
+- **Deep Kernels for Optimizing Locomotion Controllers** [pdf](https://arxiv.org/pdf/1707.09062)
 
 ## :six: Validation Methods and Frameworks / Benchmarks
 
