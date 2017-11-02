@@ -1,12 +1,22 @@
+
+
+
 # State-Representation-Learning(-In-Robotics): An-Overview
 
 # [Overleaf](https://www.overleaf.com/10392879srrcsmhcgrkz)
 
+## Survey Example
+
+GAN Survey : [pdf](https://arxiv.org/pdf/1710.07035.pdf) [arXiv](https://arxiv.org/abs/1710.07035.pdf)
+RL Survey  : [pdf](https://arxiv.org/pdf/1708.05866) [arXiv](https://arxiv.org/abs/1708.05866)
+
 # DEEP LEARNING IN ROBOTICS IS COMING  !!!!
+
 
 ## Abstract
 
-Deep learning in robotics is coming. Very soon robot will be able to benefit from the deep learning framework to make complex choices and predictions in a robust and automous fashon. The interesting particularity of a robot is that it's input are , as a human, multimodale. The robot can use it's camera at the same time than a lidar, a radar, a microphone or all the tools you can imagine. For deep learning here come the classic problem of the curse of dimensionality. How to make an algortihm able to make prediction with several high dimension inputs and how make it find hidden dependencies between them online ? The solution is reduce the dimensionality by learning state representation. State representation learning means find the few hidden parameters of each of the input (or modularity). Once the hidden parameters are found the task of finding dependencies between modularities is no more bothered by the dimensionality. This paper aims to cover the state of the art about state representation learning. It presents the different methods used to disentangle the hidden parameters of an datasets and to validate the learned state representation. This overview is particularely focus on learning representation in low dimensionnality (<5) of known parameters like the state of an 3D object. This scope make it possible to assess the representation learned.
+Deep learning in robotics is coming. Very soon robot will be able to benefit from the deep learning framework to make complex choices and predictions in a robust and autonomous fashion. The interesting particularity of a robot is that it's input are, as a human, multimodal. The robot can use it's camera at the same time than a LIDAR, a radar, a microphone or its actions. For deep learning here come the classic problem of the curse of dimensionality. How to make an algorithm able to make prediction with several high dimension inputs and how make it find hidden dependencies between them online ? A solution is to reduce the dimensionality of each input by learning a mapping into a state representation. State representation learning means find the few hidden parameters of each of the input (or modularity). Once the hidden parameters are found the task of finding dependencies between modularities is no more bothered by the dimensionality. This paper aims to cover the state of the art about state representation learning. It presents the different methods used to disentangle the hidden parameters of an datasets and to validate the learned state representation. This overview is particularly focus on learning representation in low dimensionality (<5) of known parameters like the state of an 3D object. This scope make it possible to assess the representation learned.
+
 
 ## Scope of the paper
 
