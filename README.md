@@ -7,7 +7,7 @@
 
 ## Survey Example
 
-GAN Survey : [pdf](https://arxiv.org/pdf/1710.07035.pdf) [arXiv](https://arxiv.org/abs/1710.07035.pdf)
+GAN Survey : [pdf](https://arxiv.org/pdf/1710.07035.pdf) [arXiv](https://arxiv.org/abs/1710.07035.pdf) <br>
 RL Survey  : [pdf](https://arxiv.org/pdf/1708.05866) [arXiv](https://arxiv.org/abs/1708.05866)
 
 # DEEP LEARNING IN ROBOTICS IS COMING  !!!!
