@@ -17,10 +17,9 @@ Ethan Perez, Harm de Vries, Florian Strub, Vincent Dumoulin, Aaron Courville, 20
 * Relational Networks (Santoro’17)
 
 * Towards Deep Symbolic Reinforcement Learning, Garnelo et al. NIPS 2016. Check if it uses priors? and tag it
+Handles three main components of neural-symbolic hybrid systems: 1)Conceptual abstraction. 2) Compositional structure. 3) Common sense priors, i.e., one of the first works bridging the gap among logics and neural models.
 
 * Visual Interaction Networks (Watters’17)
-
-* Towards Deep Symbolic Reinforcement Learning, Garnelo et al. NIPS 2016
 
 * Reasoning about Time and Knowledge Neural-Symbolic Learning Systems, d’Avila Garcez et al., NIPS 2004.
 
@@ -132,10 +131,3 @@ Learning from Simulated and Unsupervised Images through Adversarial Training, As
 * Reinforcement Learning with Unsupervised Auxiliary Tasks 2016  https://arxiv.org/abs/1611.05397
 * Continuous control with deep reinforcement learning, 2015.  https://arxiv.org/abs/1509.02971
 * The Intentional Unintentional Agent: Learning to Solve Many Continuous Control Tasks Simultaneously, 2017  https://arxiv.org/pdf/1707.03300.pdf
-
-
-
-
-
-
-
