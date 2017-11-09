@@ -110,7 +110,7 @@ Domain of aplication :  Robotics :heavy_minus_sign: Data Compression :heavy_minu
 
 ### :four: Embedded (metric) Learning
 
-- **A new embedding quality assessment method for manifold learning** (2016) <br>
+- **A new embedding quality assessment method for manifold learning** (NIEQA) (2016) <br>
 *Yuanyuan Ren, and Bo Zhang*, [pdf](https://arxiv.org/pdf/1108.1636v1.pdf)
 
 - **A Survey on Metric Learning for Feature Vectors and Structured Data** (2013) <br> *Aurélien Bellet, Amaury Habrard, Marc Sebban* [pdf](https://arxiv.org/pdf/1306.6709) [arXiv](https://arxiv.org/abs/1306.6709) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/BelletHS13)
@@ -132,10 +132,10 @@ Example ways of assessing CNN's performance is measuring networks receptive fiel
 
 - **On the Quantitative Evaluation of Deep Generative Models** <br> *Russ Salakhutdinov*  [pdf](www.cs.cmu.edu/~rsalakhu/talk_Eval.pdf)
 
-- **A new embedding quality assessment method for manifold learning** <br> *Zhang11*. [pdf](https://arxiv.org/pdf/1108.1636v1.pdf)
+- **A new embedding quality assessment method for manifold learning** (NIEQA) <br> *Zhang11*. [pdf](https://arxiv.org/pdf/1108.1636v1.pdf)
 
 we have their matlab code
-Interesting paper about evaluating embeddings through Normalization independent embedding quality (NIEAQA) ssessment, a normalization independent embedding quality criterion, for manifold learning purposes, based on the anisotropic scaling independent measure (ASIM), which compares the similarity between two configurations under motion and anisotropic coordinate scaling. NIEQA is based on ASIM, and consists of three assessments, a local one, a global one and a linear combination of the two. The local measure evaluates how well local neighborhood information is preserved under anisotropic coordinate scaling and rigid motion. NIEQA is valued between 0 and 1, where 0 represents a perfect preservation and its highlights is is the ability of being applicable to both normalized and isometric embeddings, it can provide both local and global assessments, and it can serve as a natural evaluation tool of learned embeddings \cite{Gracia14}.
+Interesting paper about evaluating embeddings through Normalization independent embedding quality (NIEQA) ssessment, a normalization independent embedding quality criterion, for manifold learning purposes, based on the anisotropic scaling independent measure (ASIM), which compares the similarity between two configurations under motion and anisotropic coordinate scaling. NIEQA is based on ASIM, and consists of three assessments, a local one, a global one and a linear combination of the two. The local measure evaluates how well local neighborhood information is preserved under anisotropic coordinate scaling and rigid motion. NIEQA is valued between 0 and 1, where 0 represents a perfect preservation and its highlights is is the ability of being applicable to both normalized and isometric embeddings, it can provide both local and global assessments, and it can serve as a natural evaluation tool of learned embeddings \cite{Gracia14}.
 
 - **A methodology to compare Dimensionality Reduction algorithms in terms of loss of quality** (2014) <br> *Antonio Gracia, Santiago González, Víctor Robles, Ernestina Menasalvas* 
 
