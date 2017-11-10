@@ -251,7 +251,8 @@ Proposes an unsupervised learning cost function based on sequential output stati
 
 ## Auxiliary tasks
 
-For the auxiliary task litterature, exploring the idea that self-generating multiple tasks can allow to learn efficiently single complex tasks, it is indeed a very interesting strand of work. However, the general idea is not new (what is new is to
+Seb:
+For the auxiliary task literature, exploring the idea that self-generating multiple tasks can allow to learn efficiently single complex tasks, it is indeed a very interesting strand of work. However, the general idea is not new (what is new is to
 do it with DL algorithm), and for example in the team we have studied many dimensions which are not yet integrated into these DL architectures (and so we have opportunities to make original contributions in DL by leveraging them).
 
 For example, instead of self-generating/sampling random goals/reward functions (like in Intentional Unintentional Agent), one can do this actively using bandits that maximize learning progress over goals. We are right now finishing a paper with Sébastien and Yoan to summarize some of these ideas in a formalism that is quite close to these DL papers, we will soon be able to circulate it.
