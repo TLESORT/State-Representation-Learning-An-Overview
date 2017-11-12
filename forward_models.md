@@ -40,7 +40,7 @@ the representation through multi-task learning and improves policy optimization 
 The actor-critic architecture is based on A3C \cite{Mnih15} but with capacity reduced for experimental efficiency. The self-supervised architectures share the same encoder as the actor-critic for transferability. Each self-supervised task augments the architecture with its own decoder and loss.
 
 Adopting self-supervision for RL raises issues of multitask optimization and statistical dependence. RL setting
-the distribution of transitions is neither i.i.d. nor stationary, so self-supervision should follow the policy distribution.
+the distribution of transitions is neither i.i.d. nor stationary, and thus, self-supervision should follow the policy distribution.
 
 DOUBT?: Ie, same network? same transition data means same transition probability distribution?/how to assess it?
 
@@ -70,6 +70,10 @@ While a popular line of attack for unsupervised learning, the representations le
 poor for transfer (Donahue et al., 2016). They use it for comparison with their self-supervised auxiliary losses approach.
 
 
+
+
+%ICM: Our curiosity reward model can potentially be used with a range of policy learning methods; in the experiments discussed here, we use the asynchronous advantage actor critic policy gradient (A3C) (Mnih et al., 2016) for policy learning. Our main contribution is in designing an intrinsic reward signal based on prediction error of the agent’s knowledge about its environment that scales to high-dimensional continuous state spaces like images, bypasses the hard problem of predicting pixels and is unaffected by the unpredictable aspects of the environment that do not affect the agent. OPPORTUNITY: USE WITHOUT A3C directly on DQN?
+%They show that directly using observation space for computing curiosity (badly predicted next action) is significantly worse than learning an embedding as in ICM. When comparing with an architecture without inverse model, instead they add deconvolution layers to the forward model. ICM-pixels is close to ICM in architecture but incapable of learning embedding that is invariant to the uncontrollable part of environment. succeeding on harder exploration task becomes progressively harder for the baseline A3C, whereas the curious A3C is able to achieve good score in all the scenarios.
 
 
 ## Value Prediction Networks (VPN) \cite{Oh17} integrate model-free and model-based RL methods into a single neural network. In contrast to typical model-based RL methods, VPN learns a dynamics model whose abstract states are trained to make option-conditional predictions of future values (discounted sum of rewards) rather than of future observations. VPN has several advantages over both model-free and model-based baselines in a stochastic environment where careful planning is required but building an accurate observation-prediction model is difficult. Because they outperform Deep Q-Network (DQN) on several Atari games with short-lookahead planning Atari games, can be a potential new way of learning state representations.
@@ -217,6 +221,8 @@ where w represent the trade-off between the two terms.
 
 
 
+---Exploring Robotic Minds by Predictive Coding Principle   https://openlab-flowers.inria.fr/uploads/default/original/1X/62540c9e3c4b72ec01bacb774d7dcfbe166e9ddf.pdf
+
 
 
 ## DEEP MULTI-SCALE VIDEO PREDICTION BEYOND MEAN SQUARE ERROR. Mathieu15
@@ -244,7 +250,7 @@ Proposes an unsupervised learning cost function based on sequential output stati
 
 
 ## Auxiliary tasks
-
+Seb:
 For the auxiliary task literature, exploring the idea that self-generating multiple tasks can allow to learn efficiently single complex tasks, it is indeed a very interesting strand of work. However, the general idea is not new (what is new is to
 do it with DL algorithm), and for example in the team we have studied many dimensions which are not yet integrated into these DL architectures (and so we have opportunities to make original contributions in DL by leveraging them).
 
@@ -256,24 +262,6 @@ Classical papers of the team on them (outside DL yet) are:
 
 * Intrinsically Motivated Learning of Real-World Sensorimotor Skills with Developmental Constraints. Oudeyer P-Y., Baranes A., Kaplan F. (2013) in Intrinsically Motivated Learning in Natural and Artificial Systems, eds. Baldassarre G. and Mirolli M., Springer http://www.pyoudeyer.com/OudeyerBaranesKaplan13.pdf
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## More intrinsic motivation
-
-* Curiosity-driven Exploration by Self-supervised Prediction 2017.
 
 
 
