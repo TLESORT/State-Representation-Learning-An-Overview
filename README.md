@@ -130,7 +130,8 @@ Self-supervised approach.
 
 If you find this repo useful please cite the relevant paper <br>
 
-```@ARTICLE{2018arXiv180204181L,
+```
+@ARTICLE{2018arXiv180204181L,
    author = {{Lesort}, T. and {D{\'{\i}}az-Rodr{\'{\i}}guez}, N. and {Goudou}, J.-F. and 
 	{Filliat}, D.},
     title = "{State Representation Learning for Control: An Overview}",
@@ -143,11 +144,6 @@ archivePrefix = "arXiv",
     month = feb,
    adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180204181L},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}```
+}
+```
 
-
-
-
-
-
- .
