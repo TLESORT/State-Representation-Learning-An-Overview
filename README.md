@@ -31,13 +31,13 @@ This survey aims at covering the state-of-the-art on state representation learni
 
 # Learning objective for SRL (state representation learning)
 
-## :one: Learning by reconstruction the observation
-## :two: Learning a Forward model
-## :three: Learning an Inverse Model
-## :four: Using feature adversarial learning
-## :five: Exploiting reward
-## :six: Other objective functions
-## :seven: Using hybrid objectives
+ :one: Learning by reconstruction the observation <br>
+ :two: Learning a Forward model <br>
+ :three: Learning an Inverse Model <br>
+ :four: Using feature adversarial learning <br>
+ :five: Exploiting reward <br>
+ :six: Other objective functions <br>
+ :seven: Using hybrid objectives <br>
 
 
 
