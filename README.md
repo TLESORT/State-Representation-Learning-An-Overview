@@ -1,14 +1,8 @@
 
 
 
-# State-Representation-Learning(-In-Robotics): An-Overview
+# State Representation Learning for Control: An Overview [arXiv](https://arxiv.org/abs/1802.04181)
 
-[arXiv](https://arxiv.org/abs/1802.04181)
-
-# Related Survey
-
-- **Autonomous learning of state representations for control** (2015) <br>
-*Wendelin Bohmer Jost Tobias Springenberg Joschka Boedecker Martin Riedmiller Klaus Obermayer* [pdf](http://www.ni.tu-berlin.de/fileadmin/fg215/articles/boehmer15b.pdf#cite.Lagoudakis03)
 
 ## Abstract
 
@@ -103,19 +97,10 @@ Self-supervised approach.
  *Rico Jonschkowski, Oliver Brock*, , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) [bib](http://dl.acm.org/citation.cfm?id=2825776)
 
 
+## Related Survey
 
-
-
-# To See
-
-
-- **Curiosity-driven reinforcement learning with homeostatic regulation** (2017) <br>
- *Ildefons Magrans de Abril, Ryota Kanai* [arXiv](https://arxiv.org/abs/1801.07440) [pdf](https://arxiv.org/pdf/1801.07440)
-
-
-
-
-
+- **Autonomous learning of state representations for control** (2015) <br>
+*Wendelin Bohmer Jost Tobias Springenberg Joschka Boedecker Martin Riedmiller Klaus Obermayer* [pdf](http://www.ni.tu-berlin.de/fileadmin/fg215/articles/boehmer15b.pdf#cite.Lagoudakis03)
 
 
 # Citation
