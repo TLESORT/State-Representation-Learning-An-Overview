@@ -43,22 +43,27 @@ This survey aims at covering the state-of-the-art on state representation learni
 
 ## :one: Learning by reconstruction the observation
 
-- **Deep Spatial Autoencoders for Visuomotor Learning**<br> *Finn, Chelsea, et al.*, (2015)
+- **Deep Spatial Autoencoders for Visuomotor Learning** (2015) :one: <br>
+*Chelsea Finn, Xin Yu Tan, Yan Duan, Trevor Darrell, Sergey Levine, Pieter Abbeel* [arXiv](https://arxiv.org/abs/1509.06113) [pdf](https://arxiv.org/pdf/1509.06113)
 
-- **Goal-Driven Dimensionality Reduction for Reinforcement Learning** (2017) *Parisi17*
+- **Goal-Driven Dimensionality Reduction for Reinforcement Learning** (2017) :one: <br>
+*Simone Parisi, Simon Ramstedt and Jan Peters* [pdf](http://www.ausy.tu-darmstadt.de/uploads/Site/EditPublication/parisi2017iros.pdf)
 
-- **Disentangling the independently controllable factorsof variation by interacting with the world** *Thomas17b*
-
-
-- **Independently Controllable Factors** *Thomas17*
-
-- **Learn to swing up and balance a real pole based on raw visual input data** *Mattner12*
-
-- **Dimensionality Reduced Reinforcement Learning for Assistive Robots** *Curran16*
-
-- **Using PCA to Efficiently Represent State Spaces** *Curran15*
+- **Disentangling the independently controllable factorsof variation by interacting with the world** (2017) :one: <br>
+ *Valentin Thomas, Emmanuel Bengio, William Fedus, Jules Pondard, Philippe Beaudoin, Hugo Larochelle, Joelle Pineau, Doina Precup, Yoshua Bengio* [pdf](http://acsweb.ucsd.edu/~wfedus/pdf/ICF_NIPS_2017_workshop.pdf)
 
 
+- **Independently Controllable Factors** (2017) :one: <br>
+ *Valentin Thomas, Jules Pondard, Emmanuel Bengio, Marc Sarfati, Philippe Beaudoin, Marie-Jean Meurs, Joelle Pineau, Doina Precup, Yoshua Bengio* [arXiv](https://arxiv.org/abs/1708.01289) [pdf](https://arxiv.org/pdf/1708.01289)
+
+- **Learn to swing up and balance a real pole based on raw visual input data** (2012) :one: <br>
+ *Jan Mattner, Sascha Lange, Martin Riedmiller* [pdf](https://pdfs.semanticscholar.org/d64b/08436f690df800a037eba759fcc6f0d971be.pdf)
+
+- **Dimensionality Reduced Reinforcement Learning for Assistive Robots** (2016) :one: <br>
+ *William Curran, Tim Brys, David Aha, Matthew Taylor, William D. Smart* [pdf](https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiugbGon7TZAhWBKMAKHYE4DlYQFggpMAA&url=https%3A%2F%2Fwww.aaai.org%2Focs%2Findex.php%2FFSS%2FFSS16%2Fpaper%2Fdownload%2F14076%2F13660&usg=AOvVaw3g6Vz6YhKbdC6bLn-QN8GI)
+
+- **Using PCA to Efficiently Represent State Spaces** (2015) :one: <br>
+ *Curran15* [arXiv](https://arxiv.org/abs/1505.00322) [pdf](https://arxiv.org/pdf/1505.00322)
 
 
 ## :two: Learning a Forward model
@@ -79,19 +84,18 @@ This survey aims at covering the state-of-the-art on state representation learni
 
 - **Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data** , *Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt*, (2017),  [pdf](https://openreview.net/pdf?id=HyTqHL5xg) [arXiv](https://arxiv.org/abs/1605.06432) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2016arXiv160506432K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
-- **Value Prediction Network** TODO
+- **Value Prediction Network** (2017) <br>
+*Junhyuk Oh, Satinder Singh, Honglak Lee* [arXiv](https://arxiv.org/abs/1707.03497) [pdf](https://arxiv.org/pdf/1707.03497)
 
-- **How can a recurrent neurodynamic predictive coding model cope with fluctuation in temporal patterns? Robotic experiments on imitative interaction** (2017) *Amhmadi17*  TODO
+- **Data-efficient learning of feedback policies from image pixels using deep dynamical model** (2015) <br>
+ *Assael* [arXiv](https://arxiv.org/abs/1510.02173) [pdf](https://arxiv.org/pdf/1510.02173)
 
-- **Predictive Coding for Dynamic Visual Processing: Development of Functional Hierarchy in a Multiple Spatio-Temporal Scales RNN Model** (2017) *Choi17* TODO
+- **Learning deep dynamical models from image pixels** (2014) <br>
+ *Niklas Wahlström, Thomas B. Schön, Marc Peter Deisenroth* [arXiv](https://arxiv.org/abs/1410.7550) [pdf]https://arxiv.org/pdf/1410.7550)
 
-- **Data-efficient learning of feedback policies from image pixels using deep dynamical model** (2015) *Assael*
+- **From pixels to torques: Policy learning withdeep dynamical models** (2015)
+ *Niklas Wahlström, Thomas B. Schön, Marc Peter Deisenroth* [arXiv](https://arxiv.org/abs/1502.02251) [pdf](https://arxiv.org/pdf/1502.02251)
 
-- **Learning deep dynamical models from image pixels** (2014) *Wahlstrom14*
-
-- **From pixels to torques: Policy learning withdeep dynamical models** (2015) *Wahlstrom15*
-
-- **Curiosity-driven reinforcement learning with homeostatic regulation** (2017) *Magrans17*
 
 ## :three: Learning an Inverse Model
 
@@ -119,6 +123,14 @@ Self-supervised approach.
 
 
 ## :six: Using hybrid objectives
+
+
+
+# To See
+
+
+- **Curiosity-driven reinforcement learning with homeostatic regulation** (2017) <br>
+ *Ildefons Magrans de Abril, Ryota Kanai* [arXiv](https://arxiv.org/abs/1801.07440) [pdf](https://arxiv.org/pdf/1801.07440)
 
 
 
