@@ -46,13 +46,13 @@ This survey aims at covering the state-of-the-art on state representation learni
  *Curran15* [arXiv](https://arxiv.org/abs/1505.00322) [pdf](https://arxiv.org/pdf/1505.00322)
 
  - **Deep Kalman Filters** (2015) :one: :two: <br>
- *Rahul G. Krishnan, Uri Shalit, David Sontag*, [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv151105121K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
+ *Rahul G. Krishnan, Uri Shalit, David Sontag*, [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121)
 
 - **Learning to linearize under uncertainty** (2015) :one: :two: <br>
-*R. Goroshin, M. Mathieu, and Y. LeCun* [pdf](https://arxiv.org/pdf/1506.03011.pdf) [arXiv](https://arxiv.org/abs/1506.03011) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/GoroshinML15)
+*R. Goroshin, M. Mathieu, and Y. LeCun* [pdf](https://arxiv.org/pdf/1506.03011.pdf) [arXiv](https://arxiv.org/abs/1506.03011)
 
 - **Embed to control: A locally linear latent dynamics model for control from raw images** (2015) :one: :two: <br>
- *Watter, Manuel, et al* [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
+ *Watter, Manuel, et al* [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365)
 
 - **Learning State Representation for Deep Actor-Critic Control** (2016) :two: :five: <br>
  *Jelle Munk, Jens Kober, Robert Babuška* [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
@@ -94,7 +94,7 @@ Self-supervised approach.
  *Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller* [pdf](https://arxiv.org/pdf/1705.09805), [arXiv](https://arxiv.org/abs/1705.09805)
 
  - **Learning State Representations with Robotic Priors**  (2015) :five: :six: <br>
- *Rico Jonschkowski, Oliver Brock*, , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) [bib](http://dl.acm.org/citation.cfm?id=2825776)
+ *Rico Jonschkowski, Oliver Brock*, , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) 
 
 
 ## Related Survey
@@ -103,7 +103,7 @@ Self-supervised approach.
 *Wendelin Bohmer Jost Tobias Springenberg Joschka Boedecker Martin Riedmiller Klaus Obermayer* [pdf](http://www.ni.tu-berlin.de/fileadmin/fg215/articles/boehmer15b.pdf#cite.Lagoudakis03)
 
 
-# Citation
+## Citation
 
 If you find this repo useful please cite the relevant paper <br>
 
