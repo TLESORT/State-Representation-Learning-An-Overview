@@ -21,7 +21,6 @@ This survey aims at covering the state-of-the-art on state representation learni
  :four: Using feature adversarial learning <br>
  :five: Exploiting reward <br>
  :six: Other objective functions <br>
- :seven: Using hybrid objectives <br>
 
 
 - **Deep Spatial Autoencoders for Visuomotor Learning** (2015) :one: :six: <br>
