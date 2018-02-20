@@ -19,16 +19,6 @@ In particular, the low dimension helps to overcome the curse of dimensionality, 
 This survey aims at covering the state-of-the-art on state representation learning in the most recent years. It reviews different SRL methods that involve interaction with the environment, their implementations and their applications in robotics control tasks (simulated or real). In particular, it highlights how generic learning objectives are differently exploited in the reviewed algorithms. Finally, it discusses evaluation methods to assess the representation learned and summarizes current and future lines of research.
 
 
-## Outline
-:one: Learning a State <br>
-:two: Learning next state (transition) - forward model <br>
-:three: Learning to construct next image (or observation) <br>
-:four: Learning a metric <br>
-:five: Applications <br>
-:six: Validation Methods and Frameworks <br>
-
-:pencil: resume written
-
 # Learning objective for SRL (state representation learning)
 
  :one: Learning by reconstruction the observation <br>
@@ -40,20 +30,16 @@ This survey aims at covering the state-of-the-art on state representation learni
  :seven: Using hybrid objectives <br>
 
 
-
-## :one: Learning by reconstruction the observation
-
-- **Deep Spatial Autoencoders for Visuomotor Learning** (2015) :one: <br>
+- **Deep Spatial Autoencoders for Visuomotor Learning** (2015) :one: :six: <br>
 *Chelsea Finn, Xin Yu Tan, Yan Duan, Trevor Darrell, Sergey Levine, Pieter Abbeel* [arXiv](https://arxiv.org/abs/1509.06113) [pdf](https://arxiv.org/pdf/1509.06113)
 
-- **Goal-Driven Dimensionality Reduction for Reinforcement Learning** (2017) :one: <br>
+- **Goal-Driven Dimensionality Reduction for Reinforcement Learning (rwPCA)** (2017) :one: :five: <br>
 *Simone Parisi, Simon Ramstedt and Jan Peters* [pdf](http://www.ausy.tu-darmstadt.de/uploads/Site/EditPublication/parisi2017iros.pdf)
 
-- **Disentangling the independently controllable factorsof variation by interacting with the world** (2017) :one: <br>
+- **Disentangling the independently controllable factorsof variation by interacting with the world** (2017) :one: :six: <br>
  *Valentin Thomas, Emmanuel Bengio, William Fedus, Jules Pondard, Philippe Beaudoin, Hugo Larochelle, Joelle Pineau, Doina Precup, Yoshua Bengio* [pdf](http://acsweb.ucsd.edu/~wfedus/pdf/ICF_NIPS_2017_workshop.pdf)
 
-
-- **Independently Controllable Factors** (2017) :one: <br>
+- **Independently Controllable Factors** (2017) :one: :six: <br>
  *Valentin Thomas, Jules Pondard, Emmanuel Bengio, Marc Sarfati, Philippe Beaudoin, Marie-Jean Meurs, Joelle Pineau, Doina Precup, Yoshua Bengio* [arXiv](https://arxiv.org/abs/1708.01289) [pdf](https://arxiv.org/pdf/1708.01289)
 
 - **Learn to swing up and balance a real pole based on raw visual input data** (2012) :one: <br>
@@ -65,64 +51,58 @@ This survey aims at covering the state-of-the-art on state representation learni
 - **Using PCA to Efficiently Represent State Spaces** (2015) :one: <br>
  *Curran15* [arXiv](https://arxiv.org/abs/1505.00322) [pdf](https://arxiv.org/pdf/1505.00322)
 
-
-## :two: Learning a Forward model
-
- - **Deep Kalman Filters** (2015) <br>
+ - **Deep Kalman Filters** (2015) :one: :two: <br>
  *Rahul G. Krishnan, Uri Shalit, David Sontag*, [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv151105121K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
-
-- **Learning to linearize under uncertainty** (2015) <br>
+- **Learning to linearize under uncertainty** (2015) :one: :two: <br>
 *R. Goroshin, M. Mathieu, and Y. LeCun* [pdf](https://arxiv.org/pdf/1506.03011.pdf) [arXiv](https://arxiv.org/abs/1506.03011) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/GoroshinML15)
 
-- **Embed to control: A locally linear latent dynamics model for control from raw images** (2015) <br>
+- **Embed to control: A locally linear latent dynamics model for control from raw images** (2015) :one: :two: <br>
  *Watter, Manuel, et al* [pdf](https://pdfs.semanticscholar.org/21c9/dd68b908825e2830b206659ae6dd5c5bfc02.pdf) [arXiv](https://arxiv.org/abs/1506.07365) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2015arXiv150607365W&data_type=BIBTEX&db_key=PRE&nocookieset=1)
 
-- **Learning State Representation for Deep Actor-Critic Control**. Jelle Munk 2016. [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
+- **Learning State Representation for Deep Actor-Critic Control** (2016) :two: :five: <br>
+ *Jelle Munk, Jens Kober, Robert Babuška* [pdf](http://www.jenskober.de/MunkCDC2016.pdf)
 
-- **Stable reinforcement learning with autoencoders for tactile and visual data.**<br> *van Hoof, Herke, et al*, (2016) [pdf](https://brml.org/uploads/tx_sibibtex/Hoof2016.pdf)
+- **Stable reinforcement learning with autoencoders for tactile and visual data** (2016) :one: :two: <br>
+ *Herke van Hoof, Nutan Chen, Maximilian Karl, Patrick van der Smagt, Jan Peters* [pdf](https://brml.org/uploads/tx_sibibtex/Hoof2016.pdf)
 
-- **Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data** , *Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt*, (2017),  [pdf](https://openreview.net/pdf?id=HyTqHL5xg) [arXiv](https://arxiv.org/abs/1605.06432) [bib](http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2016arXiv160506432K&data_type=BIBTEX&db_key=PRE&nocookieset=1)
+- **Deep Variational Bayes Filters: Unsupervised Learning of State Space Models from Raw Data** (2017) :one: :two: <br>
+ *Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt*, (2017),  [pdf](https://openreview.net/pdf?id=HyTqHL5xg) [arXiv](https://arxiv.org/abs/1605.06432)
 
-- **Value Prediction Network** (2017) <br>
+- **Value Prediction Network** (2017) :two: :five: <br>
 *Junhyuk Oh, Satinder Singh, Honglak Lee* [arXiv](https://arxiv.org/abs/1707.03497) [pdf](https://arxiv.org/pdf/1707.03497)
 
-- **Data-efficient learning of feedback policies from image pixels using deep dynamical model** (2015) <br>
- *Assael* [arXiv](https://arxiv.org/abs/1510.02173) [pdf](https://arxiv.org/pdf/1510.02173)
+- **Data-efficient learning of feedback policies from image pixels using deep dynamical model** (2015) :one :two: <br>
+ *J.-A. M Assael, Niklas Wahlström, Thomas B. Schön, Marc Peter Deisenroth* [arXiv](https://arxiv.org/abs/1510.02173) [pdf](https://arxiv.org/pdf/1510.02173)
 
-- **Learning deep dynamical models from image pixels** (2014) <br>
+- **Learning deep dynamical models from image pixels** (2014) :one: :two: <br>
  *Niklas Wahlström, Thomas B. Schön, Marc Peter Deisenroth* [arXiv](https://arxiv.org/abs/1410.7550) [pdf]https://arxiv.org/pdf/1410.7550)
 
-- **From pixels to torques: Policy learning withdeep dynamical models** (2015)
+- **From pixels to torques: Policy learning withdeep dynamical models** (2015):one: :two: <br>
  *Niklas Wahlström, Thomas B. Schön, Marc Peter Deisenroth* [arXiv](https://arxiv.org/abs/1502.02251) [pdf](https://arxiv.org/pdf/1502.02251)
 
 
-## :three: Learning an Inverse Model
-
-- **Loss is its own Reward: Self-Supervision for Reinforcement Learning** (2016) <br>
+- **Loss is its own Reward: Self-Supervision for Reinforcement Learning** (2016) :three: <br>
  *Evan Shelhamer, Parsa Mahmoudieh, Max Argus, Trevor Darrell* [pdf](https://arxiv.org/pdf/1612.07307.pdf) [arXiv](https://arxiv.org/pdf/1612.07307.pdf)
 
-- **Curiosity-driven Exploration by Self-supervised Prediction** (2017) *Deepak Pathak et al.* [pdf](http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf)
+- **Curiosity-driven Exploration by Self-supervised Prediction** (2017) :two: :three: <br>
+ *Deepak Pathak et al.* [pdf](http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/papers/23.pdf)
 Self-supervised approach.
 
-## :four: Using feature adversarial learning
-
-- **InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets** (2016) <br>
+- **InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets** (2016) :one: :four: <br>
  *Xi Chen, Yan Duan, Rein Houthoof, John Schulman, Ilya Sutskever, Pieter Abbeel * [pdf](https://arxiv.org/pdf/1606.03657.pdf)
  
+- **Adversarial Feature Learning** (2016) :one: :four: <br>
+*Jeff Donahue, Philipp Krähenbühl, Trevor Darrell* [arXiv](https://arxiv.org/abs/1605.09782) [pdf](https://arxiv.org/pdf/1605.09782)
 
 
-## :five: Exploiting reward
-## :six: Other objective functions
+- **PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations** (2017) :six: <br>
+ *Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller* [pdf](https://arxiv.org/pdf/1705.09805), [arXiv](https://arxiv.org/abs/1705.09805)
 
-- **PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations**, <br>
- *Rico Jonschkowski, Roland Hafner, Jonathan Scholz, Martin Riedmiller*, (2017), [pdf](https://arxiv.org/pdf/1705.09805), [arXiv](https://arxiv.org/abs/1705.09805) [bib](http://dblp.uni-trier.de/rec/bibtex/journals/corr/JonschkowskiHSR17)
-
- - **Learning State Representations with Robotic Priors**  (2015) <br>
+ - **Learning State Representations with Robotic Priors**  (2015) :five: :six: <br>
  *Rico Jonschkowski, Oliver Brock*, , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) [bib](http://dl.acm.org/citation.cfm?id=2825776)
 
 
-## :six: Using hybrid objectives
 
 
 
