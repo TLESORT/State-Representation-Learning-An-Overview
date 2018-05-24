@@ -69,7 +69,7 @@ This survey aims at covering the state-of-the-art on state representation learni
  *J.-A. M Assael, Niklas Wahlström, Thomas B. Schön, Marc Peter Deisenroth* [arXiv](https://arxiv.org/abs/1510.02173) [pdf](https://arxiv.org/pdf/1510.02173)
 
 - **Learning deep dynamical models from image pixels** (2014) :one: :two: <br>
- *Niklas Wahlström, Thomas B. Schön, Marc Peter Deisenroth* [arXiv](https://arxiv.org/abs/1410.7550) [pdf]https://arxiv.org/pdf/1410.7550)
+ *Niklas Wahlström, Thomas B. Schön, Marc Peter Deisenroth* [arXiv](https://arxiv.org/abs/1410.7550) [pdf](https://arxiv.org/pdf/1410.7550)
 
 - **From pixels to torques: Policy learning withdeep dynamical models** (2015):one: :two: <br>
  *Niklas Wahlström, Thomas B. Schön, Marc Peter Deisenroth* [arXiv](https://arxiv.org/abs/1502.02251) [pdf](https://arxiv.org/pdf/1502.02251)
