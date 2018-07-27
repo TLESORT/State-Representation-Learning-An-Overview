@@ -42,10 +42,10 @@ This survey aims at covering the state-of-the-art on state representation learni
  *William Curran, Tim Brys, David Aha, Matthew Taylor, William D. Smart* [pdf](https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiugbGon7TZAhWBKMAKHYE4DlYQFggpMAA&url=https%3A%2F%2Fwww.aaai.org%2Focs%2Findex.php%2FFSS%2FFSS16%2Fpaper%2Fdownload%2F14076%2F13660&usg=AOvVaw3g6Vz6YhKbdC6bLn-QN8GI)
 
 - **Using PCA to Efficiently Represent State Spaces** (2015) :one: <br>
- *Curran15* [arXiv](https://arxiv.org/abs/1505.00322) [pdf](https://arxiv.org/pdf/1505.00322)
+ *Curran15* [arXiv](https://arxiv.org/abs/1505.00322) [pdf](https://arxiv.org/pdf/1505.00322.pdf)
 
  - **Deep Kalman Filters** (2015) :one: :two: <br>
- *Rahul G. Krishnan, Uri Shalit, David Sontag*, [pdf](https://arxiv.org/abs/1511.05121) [arXiv](https://arxiv.org/abs/1511.05121)
+ *Rahul G. Krishnan, Uri Shalit, David Sontag*, [pdf](https://arxiv.org/pdf/1511.05121.pdf) [arXiv](https://arxiv.org/abs/1511.05121)
 
 - **Learning to linearize under uncertainty** (2015) :one: :two: <br>
 *R. Goroshin, M. Mathieu, and Y. LeCun* [pdf](https://arxiv.org/pdf/1506.03011.pdf) [arXiv](https://arxiv.org/abs/1506.03011)
@@ -94,6 +94,9 @@ Self-supervised approach.
 
  - **Learning State Representations with Robotic Priors**  (2015) :five: :six: <br>
  *Rico Jonschkowski, Oliver Brock*, , [pdf](https://pdfs.semanticscholar.org/dc93/f6d1b704abf12bbbb296f4ec250467bcb882.pdf) 
+ 
+ - **Unsupervised state representation learning with robotic priors: a robustness benchmark** (2017) :five: :six: <br>
+ *Timothée Lesort, Mathieu Seurin, Xinrui Li, Natalia Díaz Rodríguez, David Filliat* [pdf](https://arxiv.org/pdf/1709.05185.pdf) [arXiv](https://arxiv.org/abs/1709.05185)
 
 
 ## Related Survey
