@@ -110,19 +110,13 @@ Self-supervised approach.
 If you find this repo useful please cite the relevant paper <br>
 
 ```
-@ARTICLE{2018arXiv180204181L,
-   author = {{Lesort}, T. and {D{\'{\i}}az-Rodr{\'{\i}}guez}, N. and {Goudou}, J.-F. and 
-	{Filliat}, D.},
-    title = "{State Representation Learning for Control: An Overview}",
-  journal = {ArXiv e-prints},
-archivePrefix = "arXiv",
-   eprint = {1802.04181},
- primaryClass = "cs.AI",
- keywords = {Computer Science - Artificial Intelligence, Computer Science - Learning, Statistics - Machine Learning},
-     year = 2018,
-    month = feb,
-   adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180204181L},
-  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+@article{Lesort2018StateRL,
+  title={State representation learning for control: An overview},
+  author={Timoth{\'e}e Lesort and Natalia D{\'i}az Rodr{\'i}guez and Jean-François Goudou and David Filliat},
+  journal={Neural networks : the official journal of the International Neural Network Society},
+  year={2018},
+  volume={108},
+  pages={379-392}
 }
 ```
 
